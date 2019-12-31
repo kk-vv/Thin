@@ -87,11 +87,11 @@ public class ThinConfig: ThinConfigProtocol {
     }
     
     public static var borderColorLight: String {
-        return colorValue(for: "background", defaultValue: "#D1D1D6", mode: .light)
+        return colorValue(for: "border", defaultValue: "#D1D1D6", mode: .light)
     }
     
     public static var borderColorDark: String {
-        return colorValue(for: "background", defaultValue: "#2C2C2E", mode: .dark)
+        return colorValue(for: "border", defaultValue: "#2C2C2E", mode: .dark)
     }
     
     public static var emptyColorLight: String {

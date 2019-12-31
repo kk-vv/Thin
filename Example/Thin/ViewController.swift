@@ -13,23 +13,23 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBOutlet weak var tblList: UITableView!
     
-    let list1 = [("Title", UIFont.th.title(), UIColor.th.title),
-    ("Tint", UIFont.th.title(), UIColor.th.tint),
-    ("SubTint", UIFont.th.title(), UIColor.th.subTint),
-    ("Background fix -1", UIFont.th.body(fix: -1), UIColor.th.bg),
-    ("SubBackground fix -2", UIFont.th.body(fix: -2), UIColor.th.subBg)]
+    let list1 = [("Title", UIFont.th.title(), UIColor.th.title, "UIFont.th.title()"),
+    ("Tint", UIFont.th.title(), UIColor.th.tint, "UIFont.th.title()"),
+    ("SubTint", UIFont.th.title(), UIColor.th.subTint, "UIFont.th.title()"),
+    ("Background fix -1", UIFont.th.body(fix: -1), UIColor.th.bg, "UIFont.th.body(fix: -1)"),
+    ("SubBackground fix -2", UIFont.th.body(fix: -2), UIColor.th.subBg, "UIFont.th.body(fix: -2)")]
     
-    let list2 = [("Separator", UIFont.th.body(), UIColor.th.separator),
-                 ("Border", UIFont.th.body(), UIColor.th.border),
-                 ("Empty", UIFont.th.body(), UIColor.th.empty),
-                 ("Title", UIFont.th.title(), UIColor.th.title)]
+    let list2 = [("Separator", UIFont.th.body(), UIColor.th.separator, "UIFont.th.body()"),
+                 ("Border", UIFont.th.body(), UIColor.th.border, "UIFont.th.body()"),
+                 ("Empty", UIFont.th.body(), UIColor.th.empty, "UIFont.th.body()"),
+                 ("Title", UIFont.th.title(), UIColor.th.title, "UIFont.th.title()")]
     
-    let list3 = [("Body", UIFont.th.body(), UIColor.th.body),
-                 ("SubBody", UIFont.th.body(fix: -1), UIColor.th.subBody),
-                 ("Mark1", UIFont.th.mark(), UIColor.th.mark1),
-                 ("Mark2 fix -2", UIFont.th.mark(fix: -2), UIColor.th.mark2)]
+    let list3 = [("Body", UIFont.th.body(), UIColor.th.body, "UIFont.th.body()"),
+                 ("SubBody", UIFont.th.body(fix: -1), UIColor.th.subBody, "UIFont.th.body(fix: -1)"),
+                 ("Mark1", UIFont.th.mark(), UIColor.th.mark1, "UIFont.th.mark()"),
+                 ("Mark2 fix -2", UIFont.th.mark(fix: -2), UIColor.th.mark2, "UIFont.th.mark(fix: -2)")]
     
-    var list = [(String, UIFont, UIColor)]()
+    var list = [(String, UIFont, UIColor, String)]()
     
     override func loadView() {
         super.loadView()
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         //TabBarAppearance.active(tabBar: (UIApplication.shared.keyWindow?.rootViewController as? UITabBarController)?.tabBar)
         view.backgroundColor = self.color
         
-        tblList.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.th.reuseIdentifier)
+        //tblList.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.th.reuseIdentifier)
         tblList.delegate = self
         tblList.dataSource = self
         
@@ -110,12 +110,18 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.th.reuseIdentifier, for: indexPath)
-        cell.contentView.backgroundColor = UIColor.th.subBg
-        cell.textLabel?.text = list[indexPath.row].0
-        cell.textLabel?.font = list[indexPath.row].1
-        cell.textLabel?.textColor = list[indexPath.row].2
-        return cell
+        var cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.th.reuseIdentifier)
+        if cell == nil {
+            cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: UITableViewCell.th.reuseIdentifier)
+        }
+        //cell.contentView.backgroundColor = UIColor.th.subBg
+        cell?.textLabel?.text = list[indexPath.row].0
+        cell?.textLabel?.font = list[indexPath.row].1
+        cell?.textLabel?.textColor = list[indexPath.row].2
+        cell?.detailTextLabel?.text = list[indexPath.row].3
+        cell?.detailTextLabel?.textColor = UIColor.th.tint
+        cell?.detailTextLabel?.font = UIFont.th.mark()
+        return cell!
     }
 }
 
