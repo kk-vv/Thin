@@ -1,0 +1,16 @@
+PODS:
+  - Thin (0.1.0)
+
+DEPENDENCIES:
+  - Thin (from `../`)
+
+EXTERNAL SOURCES:
+  Thin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Thin: 34fb45671fe461234011c2235eb190d2df5a4846
+
+PODFILE CHECKSUM: acb73addcd7c4b17fd9a54b764c4f66214c33fec
+
+COCOAPODS: 1.8.4
