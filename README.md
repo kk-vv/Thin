@@ -1,4 +1,4 @@
-# Thin
+# ThinX
 
 [![CI Status](https://img.shields.io/travis/iFallen/Thin.svg?style=flat)](https://travis-ci.org/iFallen/Thin)
 [![Version](https://img.shields.io/cocoapods/v/Thin.svg?style=flat)](https://cocoapods.org/pods/Thin)
@@ -17,7 +17,7 @@ Thin is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Thin'
+pod 'ThinX'
 ```
 
 ## Author
