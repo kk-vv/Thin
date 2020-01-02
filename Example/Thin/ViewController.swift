@@ -62,6 +62,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         
     }
     
+    override func rightBarButtonAction(index: Int) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.th.bg
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     var color: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.init { (trait) -> UIColor in
@@ -75,8 +81,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
             return .white
         }
     }
-
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

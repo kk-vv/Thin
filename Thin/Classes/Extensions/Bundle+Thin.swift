@@ -9,7 +9,7 @@ import Foundation
 
 extension Thin where Base: Bundle {
     
-    /// settings..bundle
+    /// Settings.bundle
     public static var settingBundle: Bundle {
         guard let path = Bundle(for: ThinConfig.self).path(forResource: "Settings", ofType: "bundle"), let bundle = Bundle.init(path: path) else {
             fatalError("Thin settings.bundle is missing!")
@@ -18,7 +18,7 @@ extension Thin where Base: Bundle {
     }
     
     
-    /// config.plist
+    /// Config.plist
     public static var configPath: String {
         guard let path = settingBundle.path(forResource: "Configs/Config", ofType: "plist") else {
             fatalError("Thin config.plist is missing!")
@@ -29,11 +29,11 @@ extension Thin where Base: Bundle {
     ///NavBackImageName
     public static var navBackImageName: String? {
         let scale = Int(UIScreen.main.scale)
-        return settingBundle.path(forResource: "zx_navback@\(scale)x", ofType: "png")
+        return settingBundle.path(forResource: "navback@\(scale)x", ofType: "png")
     }
 }
 
-extension Thin where  Base: Bundle {
+extension Thin where Base: Bundle {
     /// ProjectName
     public static var projectName: String {
         return (Bundle.main.infoDictionary?["CFBundleExecutable"] as? String) ?? "N/V"

@@ -81,7 +81,7 @@ extension Thin where Base == Date {
         return NSTimeZone(forSecondsFromGMT: +28800) as TimeZone
     }
     
-    public struct millisecond {
+    public struct Millisecond {
         
         /// Millisecond to date
         ///
@@ -128,13 +128,13 @@ extension Thin where Base == Date {
         ///   - c: component string
         /// - Returns: return value description
         public static func intToTime(_ int:TimeInterval,
-                                     componentString c:String?) -> String {
+                                     component c: String?) -> String {
             let formatter = DateFormatter()
             formatter.dateFormat = "HH:mm:ss"
             let date = Date(timeInterval: int, since: formatter.date(from: "00:00:00")!)
             if let c = c {
-                formatter.dateFormat = "HH\(c)mm\(c)ss"
-            }else{
+                formatter.dateFormat = "HH" + c + "mm" + c +  "ss"
+            } else {
                 formatter.dateFormat = "HH°mm′ss″"
             }
             return formatter.string(from: date)

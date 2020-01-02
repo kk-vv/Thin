@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDB070CD7944B2876C369EC358D257A /* UIViewController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535D7C671C138B1DF7374DD22935C2B /* UIViewController+Thin.swift */; };
+		11D82A18A157CAB30F40CDB3D9C8BDD1 /* ThinConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937BA05036D04D9F71BB11E35FE003F /* ThinConfigProtocol.swift */; };
 		136AC09EC89A43E2E02AA7FCFE24CD1E /* Pods-Thin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D38E0633203A4410980FB50A020524 /* Pods-Thin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13E241470FD6CB33C62B2064A8320D0F /* Timer+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA0B5AB896342D8C97A5EC43F722983 /* Timer+Thin.swift */; };
-		500A8A20523E1EBF9495EF4E0FA32B93 /* NavBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B53842FEA85EC951B91A98ADBFCFC /* NavBarAppearance.swift */; };
-		52194D2BFAA2C251D14D20443100A8B1 /* NSAttributedString+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DC6242AA4D8DC21DD54898D8915D5 /* NSAttributedString+Thin.swift */; };
-		54D1291474546873887C3A8F1718FB16 /* Date+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C78188F8DA08BCBEA9C14AE4B2A5F4 /* Date+Thin.swift */; };
-		5CCF37A3093FDFF11E10BA5962881E0A /* Bundle+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2698C0452AA6E9FFE6550C79A8501 /* Bundle+Thin.swift */; };
-		64B664820CC3A04EE8FFEF1E41DDB702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		68E9B838FE4ED88521405E8042C7F7CE /* Thin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC784B4057087C2D7A32148354BD0B /* Thin-dummy.m */; };
-		6A3F180A8C52B757480EF4994CD03E00 /* UIColor+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFE40D086B7241F3824AE35C2F4151 /* UIColor+Thin.swift */; };
-		6F6389D82DDBA84145A9508F0FFAD00C /* UIDevice+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF57FE65E5D55FA252E02FACA9CDB19 /* UIDevice+Thin.swift */; };
-		74CE747ED47E9A440EC3EA8FD8E3D1BF /* String+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A8EFB7AF11373AA9913F096D7BB5D3 /* String+Thin.swift */; };
-		81D1CE2DA41C72275045E00B739006C6 /* ThinConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84347AC94BB13C5B296660D709955C04 /* ThinConfig.swift */; };
-		8A295827A568DDC04B58466662054D74 /* UIViewController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEC3D5A87B136A2E4920F87A501F81 /* UIViewController+Thin.swift */; };
-		95468751CD236055DEE756C6001B6CEF /* TabBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A15121DA1EC4B9841F4336031BB5CB /* TabBarAppearance.swift */; };
+		3854479A2C4B4D5085D35C7BE7BAEB94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3B5C613D603B201723542DF0D53C1BDE /* Bundle+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDF19F30DC70ED11E74A6D6F4CFC201 /* Bundle+Thin.swift */; };
+		46C2B11528C11C60A6DE5348F11605BE /* ThinConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B43E0C72B835209378BF7BFAD5D7F /* ThinConfig.swift */; };
+		7AB27DAA78649B5EDA2B0241393828E5 /* UITabBarController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4139B63FAD89A06EDC8D284E5B32B250 /* UITabBarController+Thin.swift */; };
+		84875DBCBEABC615DE268A10B65CFC53 /* THReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403906AF3CE59DEC1B9EE25BD66D2EB /* THReusableView.swift */; };
+		8E78620672956065BA7446422E3B2D37 /* NavBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D476238C29311746622253F2E37BAF /* NavBarAppearance.swift */; };
+		924CDD92527F4345D91485FB66DF6E39 /* UIFont+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC4205EE5410E5DD16CC927CEECE05 /* UIFont+Thin.swift */; };
 		9E0254CC92EA21C3939DD7828A39BE9F /* Pods-Thin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE35F3284AB89A0C0825D28D3FB0BE6 /* Pods-Thin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE9460C8D15229C91B1F95DC01EF58C7 /* UITabBarController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4741D028CF7CB21C2DD843474F03E30 /* UITabBarController+Thin.swift */; };
+		A1AEFBB68ECD037C01B835DB87FD654E /* Thin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6CC66F838582B9AB862D1CA46E0A2C /* Thin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7371D3394A114E932C34FD278AAFDC7 /* UIImage+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B470D692543751E7732A4958BE0AD4 /* UIImage+Thin.swift */; };
+		AA661BD862CD82A11B82AFB4A8463E7E /* Date+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79ED03C34D167AEBD88E901FC3DB96F /* Date+Thin.swift */; };
+		B26DCF0A75446716C33A2490E43B0D4B /* String+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9764CC999EFD5F40829A1CD9CF941BE1 /* String+Thin.swift */; };
+		B6DFC4397FA6691F8DA84DEC9694959E /* UIAlertController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A367202DF99D711D3480CA282293D /* UIAlertController+Thin.swift */; };
 		B99C55B22603F64EE0F67FEBBCBF906F /* Pods-Thin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DEB80AF38464873D5A5C13EEAD001B /* Pods-Thin_Tests-dummy.m */; };
-		BA521328D75B11DCC2E2C647C9344EB4 /* ThinConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F0CEF092FE3277FB30B89E3F41E555 /* ThinConfigProtocol.swift */; };
 		C012865E4DECE5CC3B8D40836CC63D07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C0C9B8C523BAE34100BB33E5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0C9B8C423BAE34100BB33E5 /* Settings.bundle */; };
-		C0C9B8C923BAF8D800BB33E5 /* UIImage+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9B8C823BAF8D800BB33E5 /* UIImage+Thin.swift */; };
-		C0C9B8CB23BB402E00BB33E5 /* UIFont+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9B8CA23BB402E00BB33E5 /* UIFont+Thin.swift */; };
-		C24EB0022FE30EF4527D4D74735B4A92 /* Thin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C46B737F87FEA3017BE1B01666F72F9 /* Thin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE518C53CA5423DD3DE181295AE8DB0D /* Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113004A921B776168571E7F050E3DFB7 /* Thin.swift */; };
+		C04F142E23BD852700F41343 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C04F142D23BD852700F41343 /* Settings.bundle */; };
+		C68E60F3583A3B660A7E8329AED2428F /* ThinNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728014BA50C7933A7E60AFFAF320055 /* ThinNetwork.swift */; };
+		CD78F17D2238FB6C4DFE72D445DF841D /* UIColor+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D7B743952887BFB975737A84E612F /* UIColor+Thin.swift */; };
+		CDD963E059A86F353A3D706C3CFF5292 /* Timer+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D227B1992D4CA777ACE61AA6B0F481 /* Timer+Thin.swift */; };
+		D038BC1F75931905186C6A687019571B /* Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB58AD4A2C3689FDC824847EDF5E7 /* Thin.swift */; };
 		D3B0E11FF3C7CCB9265E9868797592F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DBF81F8DF7EF7534D4106CBE07F61F34 /* UIAlertController+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95C6845EFB3BD446763C0E82C25255 /* UIAlertController+Thin.swift */; };
-		DC6A78628D56A5CB37847D501F46A7F1 /* ThinNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39121B84F9356F1BD3D9AFA5EDD325A9 /* ThinNetwork.swift */; };
-		EF6FF62F296F5BEE9ADD42BBDB17FDFC /* THReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8656A621A106EEC3BBBFD33E4CD0F2C6 /* THReusableView.swift */; };
+		E3BEB77F71139F9D1CDE2391C9BDFB4E /* UIDevice+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB15B47B812D9415E4C3EDD21930F65 /* UIDevice+Thin.swift */; };
+		E3CDBE2AC2FD1564245F14F5C736AD69 /* Thin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D52FCF72E6AE1FDABE42919E1CCE27CF /* Thin-dummy.m */; };
+		E6A42EA947E86CC69892A466396715A8 /* TabBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6588EE7670086CE548D1B477423F3F /* TabBarAppearance.swift */; };
+		EABBFAC2989B88A24B1D33400FD54109 /* NSAttributedString+Thin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EAC55EE82CDB870D5F1A0131CA69B1 /* NSAttributedString+Thin.swift */; };
 		F5EF12C6C232A45136DC4E795830835B /* Pods-Thin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD9E3885BB50894C05767E355B6E32 /* Pods-Thin_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -56,57 +56,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D227B1992D4CA777ACE61AA6B0F481 /* Timer+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Timer+Thin.swift"; sourceTree = "<group>"; };
 		03B7CA2FC5D5202E0AF9ECB1EA828B10 /* Pods-Thin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		113004A921B776168571E7F050E3DFB7 /* Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thin.swift; path = Thin/Classes/Thin.swift; sourceTree = "<group>"; };
+		08EAC55EE82CDB870D5F1A0131CA69B1 /* NSAttributedString+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Thin.swift"; sourceTree = "<group>"; };
+		0B9BC6E908F0621A85717AE40C4B12D5 /* Thin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Thin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		11CD9E3885BB50894C05767E355B6E32 /* Pods-Thin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thin_Example-dummy.m"; sourceTree = "<group>"; };
-		27CFE40D086B7241F3824AE35C2F4151 /* UIColor+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Thin.swift"; sourceTree = "<group>"; };
+		162B43E0C72B835209378BF7BFAD5D7F /* ThinConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinConfig.swift; sourceTree = "<group>"; };
+		1C6CC66F838582B9AB862D1CA46E0A2C /* Thin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thin-umbrella.h"; sourceTree = "<group>"; };
+		20B37318CDDE04AEEF2F64891CB658ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33A458D46D6B8AD5F707533A2C530B46 /* Pods-Thin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thin_Tests-Info.plist"; sourceTree = "<group>"; };
-		39121B84F9356F1BD3D9AFA5EDD325A9 /* ThinNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinNetwork.swift; sourceTree = "<group>"; };
-		443DC6242AA4D8DC21DD54898D8915D5 /* NSAttributedString+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Thin.swift"; sourceTree = "<group>"; };
+		4139B63FAD89A06EDC8D284E5B32B250 /* UITabBarController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Thin.swift"; sourceTree = "<group>"; };
+		49A9AA7D44A674913CF1ADF932FAA3E4 /* Thin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Thin.xcconfig; sourceTree = "<group>"; };
 		4C6BFA20B6746DDB727EC5F8F646F0A8 /* Pods_Thin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F637C30430C41C65641606D60C36C55 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		52DEC3D5A87B136A2E4920F87A501F81 /* UIViewController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Thin.swift"; sourceTree = "<group>"; };
+		50D476238C29311746622253F2E37BAF /* NavBarAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavBarAppearance.swift; sourceTree = "<group>"; };
 		5A293671C2133755248070831D581654 /* Pods-Thin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE35F3284AB89A0C0825D28D3FB0BE6 /* Pods-Thin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thin_Example-umbrella.h"; sourceTree = "<group>"; };
-		5CA0B5AB896342D8C97A5EC43F722983 /* Timer+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Timer+Thin.swift"; sourceTree = "<group>"; };
+		5F6588EE7670086CE548D1B477423F3F /* TabBarAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAppearance.swift; sourceTree = "<group>"; };
 		62E7200F9184B4D0AEAF07DC786742B4 /* Pods-Thin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		66D17BF4435BDC76E95D3E52D43709BC /* Pods-Thin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6B1B53842FEA85EC951B91A98ADBFCFC /* NavBarAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavBarAppearance.swift; sourceTree = "<group>"; };
-		6C46B737F87FEA3017BE1B01666F72F9 /* Thin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thin-umbrella.h"; sourceTree = "<group>"; };
-		6FF57FE65E5D55FA252E02FACA9CDB19 /* UIDevice+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Thin.swift"; sourceTree = "<group>"; };
+		6937BA05036D04D9F71BB11E35FE003F /* ThinConfigProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinConfigProtocol.swift; sourceTree = "<group>"; };
+		6D923DEADFAD58F99E3090AB9661A27C /* Thin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Thin-Info.plist"; sourceTree = "<group>"; };
 		711AF6F63BCB09D063C8D1F74F4F76F9 /* Pods-Thin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thin_Example-frameworks.sh"; sourceTree = "<group>"; };
 		77D38E0633203A4410980FB50A020524 /* Pods-Thin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thin_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7BB15B47B812D9415E4C3EDD21930F65 /* UIDevice+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+Thin.swift"; sourceTree = "<group>"; };
 		8057F0567130ECEA2D41843DACB0C5CE /* Pods-Thin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		81C30118027725C3B99489267ACFA126 /* Thin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Thin.xcconfig; sourceTree = "<group>"; };
-		84347AC94BB13C5B296660D709955C04 /* ThinConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinConfig.swift; sourceTree = "<group>"; };
+		81E582A2C7EF3E608FD64AA313A2359C /* Thin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Thin.modulemap; sourceTree = "<group>"; };
 		85F630E16BB71711C1BB7EB20A0D8BAA /* Pods-Thin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Thin_Example.modulemap"; sourceTree = "<group>"; };
-		8656A621A106EEC3BBBFD33E4CD0F2C6 /* THReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = THReusableView.swift; sourceTree = "<group>"; };
 		8CA0EAFF05F2086D0462416524062E0D /* Thin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDF19F30DC70ED11E74A6D6F4CFC201 /* Bundle+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Thin.swift"; sourceTree = "<group>"; };
 		94F6E1B4826F6E9ECF36E27ADF35538E /* Pods-Thin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		984E91B165FF1CAF23E5EA8A16D27D3C /* Thin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Thin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99BC784B4057087C2D7A32148354BD0B /* Thin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thin-dummy.m"; sourceTree = "<group>"; };
+		9764CC999EFD5F40829A1CD9CF941BE1 /* String+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Thin.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A48027B702E434932BC69EB5BFBC4CA4 /* Thin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thin-prefix.pch"; sourceTree = "<group>"; };
+		A79ED03C34D167AEBD88E901FC3DB96F /* Date+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Thin.swift"; sourceTree = "<group>"; };
+		ABFA21D20E5CC725089416C4A7EA806A /* Thin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thin-prefix.pch"; sourceTree = "<group>"; };
+		AF2A367202DF99D711D3480CA282293D /* UIAlertController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Thin.swift"; sourceTree = "<group>"; };
 		B393788C1020233DF5EEC6158A7A36B0 /* Pods-Thin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thin_Example-Info.plist"; sourceTree = "<group>"; };
-		B4A15121DA1EC4B9841F4336031BB5CB /* TabBarAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAppearance.swift; sourceTree = "<group>"; };
-		B7F0CEF092FE3277FB30B89E3F41E555 /* ThinConfigProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinConfigProtocol.swift; sourceTree = "<group>"; };
-		BD221425850D7209DDC30DACE6DA3361 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE9D03072D3C40108B2203021010CE20 /* Pods-Thin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Thin_Tests.modulemap"; sourceTree = "<group>"; };
-		C0C9B8C423BAE34100BB33E5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Thin/Settings.bundle; sourceTree = "<group>"; };
-		C0C9B8C823BAF8D800BB33E5 /* UIImage+Thin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Thin.swift"; sourceTree = "<group>"; };
-		C0C9B8CA23BB402E00BB33E5 /* UIFont+Thin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Thin.swift"; sourceTree = "<group>"; };
-		C4741D028CF7CB21C2DD843474F03E30 /* UITabBarController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Thin.swift"; sourceTree = "<group>"; };
-		C7E2698C0452AA6E9FFE6550C79A8501 /* Bundle+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Thin.swift"; sourceTree = "<group>"; };
-		CA95C6845EFB3BD446763C0E82C25255 /* UIAlertController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Thin.swift"; sourceTree = "<group>"; };
+		C04F142D23BD852700F41343 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Thin/Settings.bundle; sourceTree = "<group>"; };
 		CAF3A24B32E60706B84FFE240EFBEA11 /* Pods-Thin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D40E3ECA3E40B507888FDA0EC6C97969 /* Thin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Thin-Info.plist"; sourceTree = "<group>"; };
+		D2AC4205EE5410E5DD16CC927CEECE05 /* UIFont+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Thin.swift"; sourceTree = "<group>"; };
+		D42D7B743952887BFB975737A84E612F /* UIColor+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Thin.swift"; sourceTree = "<group>"; };
+		D52FCF72E6AE1FDABE42919E1CCE27CF /* Thin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thin-dummy.m"; sourceTree = "<group>"; };
 		D9DEB80AF38464873D5A5C13EEAD001B /* Pods-Thin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thin_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB5A9018FACA0011EABF792607E2B89E /* Pods-Thin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD9806628673FAF421643B0E10D3ABA6 /* Pods_Thin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BE681109FB547E79D089D196CC919F /* Thin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Thin.modulemap; sourceTree = "<group>"; };
-		F5A8EFB7AF11373AA9913F096D7BB5D3 /* String+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Thin.swift"; sourceTree = "<group>"; };
-		F8C78188F8DA08BCBEA9C14AE4B2A5F4 /* Date+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Thin.swift"; sourceTree = "<group>"; };
+		E728014BA50C7933A7E60AFFAF320055 /* ThinNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThinNetwork.swift; sourceTree = "<group>"; };
+		EC9BB58AD4A2C3689FDC824847EDF5E7 /* Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thin.swift; path = Thin/Classes/Thin.swift; sourceTree = "<group>"; };
+		EEAF2527E61ADC0BBA4C2A5064FDFC12 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F1B470D692543751E7732A4958BE0AD4 /* UIImage+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Thin.swift"; sourceTree = "<group>"; };
+		F403906AF3CE59DEC1B9EE25BD66D2EB /* THReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = THReusableView.swift; sourceTree = "<group>"; };
+		F535D7C671C138B1DF7374DD22935C2B /* UIViewController+Thin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Thin.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +118,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F7086068910F62041CFA4EF38F16DDD /* Frameworks */ = {
+		63C4870B8772A0779C93AB90F1D90704 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B664820CC3A04EE8FFEF1E41DDB702 /* Foundation.framework in Frameworks */,
+				3854479A2C4B4D5085D35C7BE7BAEB94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +137,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06DA0709021EAB7F152C1B4C6737CF30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DDF19F30DC70ED11E74A6D6F4CFC201 /* Bundle+Thin.swift */,
+				A79ED03C34D167AEBD88E901FC3DB96F /* Date+Thin.swift */,
+				08EAC55EE82CDB870D5F1A0131CA69B1 /* NSAttributedString+Thin.swift */,
+				9764CC999EFD5F40829A1CD9CF941BE1 /* String+Thin.swift */,
+				F403906AF3CE59DEC1B9EE25BD66D2EB /* THReusableView.swift */,
+				01D227B1992D4CA777ACE61AA6B0F481 /* Timer+Thin.swift */,
+				AF2A367202DF99D711D3480CA282293D /* UIAlertController+Thin.swift */,
+				D42D7B743952887BFB975737A84E612F /* UIColor+Thin.swift */,
+				7BB15B47B812D9415E4C3EDD21930F65 /* UIDevice+Thin.swift */,
+				D2AC4205EE5410E5DD16CC927CEECE05 /* UIFont+Thin.swift */,
+				F1B470D692543751E7732A4958BE0AD4 /* UIImage+Thin.swift */,
+				4139B63FAD89A06EDC8D284E5B32B250 /* UITabBarController+Thin.swift */,
+				F535D7C671C138B1DF7374DD22935C2B /* UIViewController+Thin.swift */,
+			);
+			name = Extensions;
+			path = Thin/Classes/Extensions;
+			sourceTree = "<group>";
+		};
 		14F8B7C3A3B985C6A759D682D4EA1444 /* Pods-Thin_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,24 +175,38 @@
 			path = "Target Support Files/Pods-Thin_Example";
 			sourceTree = "<group>";
 		};
-		28BFDFC34F1F5CF611D9FF0B66189010 /* Configs */ = {
+		1A3E82B3BE53AF31C6D09E60CD2F3270 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				84347AC94BB13C5B296660D709955C04 /* ThinConfig.swift */,
-				B7F0CEF092FE3277FB30B89E3F41E555 /* ThinConfigProtocol.swift */,
+				81E582A2C7EF3E608FD64AA313A2359C /* Thin.modulemap */,
+				49A9AA7D44A674913CF1ADF932FAA3E4 /* Thin.xcconfig */,
+				D52FCF72E6AE1FDABE42919E1CCE27CF /* Thin-dummy.m */,
+				6D923DEADFAD58F99E3090AB9661A27C /* Thin-Info.plist */,
+				ABFA21D20E5CC725089416C4A7EA806A /* Thin-prefix.pch */,
+				1C6CC66F838582B9AB862D1CA46E0A2C /* Thin-umbrella.h */,
 			);
-			name = Configs;
-			path = Thin/Classes/Configs;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Thin";
 			sourceTree = "<group>";
 		};
-		2E511C2FE3C27393B0C636D4468A99EE /* Pod */ = {
+		203ACB510DFACEC676D590D7169F7BC5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4F637C30430C41C65641606D60C36C55 /* LICENSE */,
-				BD221425850D7209DDC30DACE6DA3361 /* README.md */,
-				984E91B165FF1CAF23E5EA8A16D27D3C /* Thin.podspec */,
+				EEAF2527E61ADC0BBA4C2A5064FDFC12 /* LICENSE */,
+				20B37318CDDE04AEEF2F64891CB658ED /* README.md */,
+				0B9BC6E908F0621A85717AE40C4B12D5 /* Thin.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		2221DD359C30A7E6E67DEC2F51441C09 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				50D476238C29311746622253F2E37BAF /* NavBarAppearance.swift */,
+				5F6588EE7670086CE548D1B477423F3F /* TabBarAppearance.swift */,
+			);
+			name = Appearance;
+			path = Thin/Classes/Appearance;
 			sourceTree = "<group>";
 		};
 		483BCD1E29DFCE08323FED00D5399CEC /* Products */ = {
@@ -184,14 +219,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F4A325F871E47BE3A96C206073293DE /* Appearance */ = {
+		6D73B095B76CAABC5B4BEDB0879BF40B /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				6B1B53842FEA85EC951B91A98ADBFCFC /* NavBarAppearance.swift */,
-				B4A15121DA1EC4B9841F4336031BB5CB /* TabBarAppearance.swift */,
+				162B43E0C72B835209378BF7BFAD5D7F /* ThinConfig.swift */,
+				6937BA05036D04D9F71BB11E35FE003F /* ThinConfigProtocol.swift */,
 			);
-			name = Appearance;
-			path = Thin/Classes/Appearance;
+			name = Configs;
+			path = Thin/Classes/Configs;
 			sourceTree = "<group>";
 		};
 		7030EF9D9F872C50BCAA6CDEA138C2DD /* Targets Support Files */ = {
@@ -203,47 +238,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		963AB8F4AA4F3A95CEA92BFC0BCE1243 /* Utils */ = {
+		86C83B5972978DCE6F3C2565B7821077 /* Thin */ = {
 			isa = PBXGroup;
 			children = (
-				39121B84F9356F1BD3D9AFA5EDD325A9 /* ThinNetwork.swift */,
-			);
-			name = Utils;
-			path = Thin/Classes/Utils;
-			sourceTree = "<group>";
-		};
-		9E5BEA00974F1F01DACCB442C5DA6D27 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C7E2698C0452AA6E9FFE6550C79A8501 /* Bundle+Thin.swift */,
-				F8C78188F8DA08BCBEA9C14AE4B2A5F4 /* Date+Thin.swift */,
-				443DC6242AA4D8DC21DD54898D8915D5 /* NSAttributedString+Thin.swift */,
-				F5A8EFB7AF11373AA9913F096D7BB5D3 /* String+Thin.swift */,
-				8656A621A106EEC3BBBFD33E4CD0F2C6 /* THReusableView.swift */,
-				5CA0B5AB896342D8C97A5EC43F722983 /* Timer+Thin.swift */,
-				CA95C6845EFB3BD446763C0E82C25255 /* UIAlertController+Thin.swift */,
-				27CFE40D086B7241F3824AE35C2F4151 /* UIColor+Thin.swift */,
-				6FF57FE65E5D55FA252E02FACA9CDB19 /* UIDevice+Thin.swift */,
-				C4741D028CF7CB21C2DD843474F03E30 /* UITabBarController+Thin.swift */,
-				52DEC3D5A87B136A2E4920F87A501F81 /* UIViewController+Thin.swift */,
-				C0C9B8C823BAF8D800BB33E5 /* UIImage+Thin.swift */,
-				C0C9B8CA23BB402E00BB33E5 /* UIFont+Thin.swift */,
-			);
-			name = Extensions;
-			path = Thin/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		AC145C05172AC22CF20C7C46336DED54 /* Thin */ = {
-			isa = PBXGroup;
-			children = (
-				C0C9B8C423BAE34100BB33E5 /* Settings.bundle */,
-				113004A921B776168571E7F050E3DFB7 /* Thin.swift */,
-				4F4A325F871E47BE3A96C206073293DE /* Appearance */,
-				28BFDFC34F1F5CF611D9FF0B66189010 /* Configs */,
-				9E5BEA00974F1F01DACCB442C5DA6D27 /* Extensions */,
-				2E511C2FE3C27393B0C636D4468A99EE /* Pod */,
-				AD390D96BD526A1571420F5036F13EAB /* Support Files */,
-				963AB8F4AA4F3A95CEA92BFC0BCE1243 /* Utils */,
+				C04F142D23BD852700F41343 /* Settings.bundle */,
+				EC9BB58AD4A2C3689FDC824847EDF5E7 /* Thin.swift */,
+				2221DD359C30A7E6E67DEC2F51441C09 /* Appearance */,
+				6D73B095B76CAABC5B4BEDB0879BF40B /* Configs */,
+				06DA0709021EAB7F152C1B4C6737CF30 /* Extensions */,
+				203ACB510DFACEC676D590D7169F7BC5 /* Pod */,
+				1A3E82B3BE53AF31C6D09E60CD2F3270 /* Support Files */,
+				D8095D1E5D6AA67E6AF04375A7E2D9A1 /* Utils */,
 			);
 			name = Thin;
 			path = ../..;
@@ -252,23 +257,9 @@
 		AC3A614463005BCC07F0DE960B84500E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC145C05172AC22CF20C7C46336DED54 /* Thin */,
+				86C83B5972978DCE6F3C2565B7821077 /* Thin */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		AD390D96BD526A1571420F5036F13EAB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3BE681109FB547E79D089D196CC919F /* Thin.modulemap */,
-				81C30118027725C3B99489267ACFA126 /* Thin.xcconfig */,
-				99BC784B4057087C2D7A32148354BD0B /* Thin-dummy.m */,
-				D40E3ECA3E40B507888FDA0EC6C97969 /* Thin-Info.plist */,
-				A48027B702E434932BC69EB5BFBC4CA4 /* Thin-prefix.pch */,
-				6C46B737F87FEA3017BE1B01666F72F9 /* Thin-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Thin";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -314,6 +305,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D8095D1E5D6AA67E6AF04375A7E2D9A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E728014BA50C7933A7E60AFFAF320055 /* ThinNetwork.swift */,
+			);
+			name = Utils;
+			path = Thin/Classes/Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -325,19 +325,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E66AEC6845A6C77D90AF70A784D578D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C24EB0022FE30EF4527D4D74735B4A92 /* Thin-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		66008B328D0F61116040CEA5CEBC5196 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				136AC09EC89A43E2E02AA7FCFE24CD1E /* Pods-Thin_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5727CA5FC9A13EA0B4BE4A527D7CDB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AEFBB68ECD037C01B835DB87FD654E /* Thin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,12 +365,12 @@
 		};
 		D4F2F5EBC1BFB184FD33BADCD3F4232D /* Thin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 233EAAFBD5841E87D169C6AF9539F8FD /* Build configuration list for PBXNativeTarget "Thin" */;
+			buildConfigurationList = 0C069D661426307C59C9F5F9529ED2A8 /* Build configuration list for PBXNativeTarget "Thin" */;
 			buildPhases = (
-				2E66AEC6845A6C77D90AF70A784D578D /* Headers */,
-				4D4816A8D6D05D2F41C4EB70E02EA822 /* Sources */,
-				7F7086068910F62041CFA4EF38F16DDD /* Frameworks */,
-				616278C0FD0B813B626CA1FF13924DF3 /* Resources */,
+				D5727CA5FC9A13EA0B4BE4A527D7CDB1 /* Headers */,
+				237AB179D16E6D003F24A6E0A5C82095 /* Sources */,
+				63C4870B8772A0779C93AB90F1D90704 /* Frameworks */,
+				5973B24DF0832B5B0B026D0A7E6180FA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -444,49 +444,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		616278C0FD0B813B626CA1FF13924DF3 /* Resources */ = {
+		5973B24DF0832B5B0B026D0A7E6180FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C9B8C523BAE34100BB33E5 /* Settings.bundle in Resources */,
+				C04F142E23BD852700F41343 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		237AB179D16E6D003F24A6E0A5C82095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5C613D603B201723542DF0D53C1BDE /* Bundle+Thin.swift in Sources */,
+				AA661BD862CD82A11B82AFB4A8463E7E /* Date+Thin.swift in Sources */,
+				8E78620672956065BA7446422E3B2D37 /* NavBarAppearance.swift in Sources */,
+				EABBFAC2989B88A24B1D33400FD54109 /* NSAttributedString+Thin.swift in Sources */,
+				B26DCF0A75446716C33A2490E43B0D4B /* String+Thin.swift in Sources */,
+				E6A42EA947E86CC69892A466396715A8 /* TabBarAppearance.swift in Sources */,
+				E3CDBE2AC2FD1564245F14F5C736AD69 /* Thin-dummy.m in Sources */,
+				D038BC1F75931905186C6A687019571B /* Thin.swift in Sources */,
+				46C2B11528C11C60A6DE5348F11605BE /* ThinConfig.swift in Sources */,
+				11D82A18A157CAB30F40CDB3D9C8BDD1 /* ThinConfigProtocol.swift in Sources */,
+				C68E60F3583A3B660A7E8329AED2428F /* ThinNetwork.swift in Sources */,
+				84875DBCBEABC615DE268A10B65CFC53 /* THReusableView.swift in Sources */,
+				CDD963E059A86F353A3D706C3CFF5292 /* Timer+Thin.swift in Sources */,
+				B6DFC4397FA6691F8DA84DEC9694959E /* UIAlertController+Thin.swift in Sources */,
+				CD78F17D2238FB6C4DFE72D445DF841D /* UIColor+Thin.swift in Sources */,
+				E3BEB77F71139F9D1CDE2391C9BDFB4E /* UIDevice+Thin.swift in Sources */,
+				924CDD92527F4345D91485FB66DF6E39 /* UIFont+Thin.swift in Sources */,
+				A7371D3394A114E932C34FD278AAFDC7 /* UIImage+Thin.swift in Sources */,
+				7AB27DAA78649B5EDA2B0241393828E5 /* UITabBarController+Thin.swift in Sources */,
+				0BDB070CD7944B2876C369EC358D257A /* UIViewController+Thin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BBA99711258F6F4019F34B6553144C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B99C55B22603F64EE0F67FEBBCBF906F /* Pods-Thin_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D4816A8D6D05D2F41C4EB70E02EA822 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CCF37A3093FDFF11E10BA5962881E0A /* Bundle+Thin.swift in Sources */,
-				54D1291474546873887C3A8F1718FB16 /* Date+Thin.swift in Sources */,
-				500A8A20523E1EBF9495EF4E0FA32B93 /* NavBarAppearance.swift in Sources */,
-				52194D2BFAA2C251D14D20443100A8B1 /* NSAttributedString+Thin.swift in Sources */,
-				74CE747ED47E9A440EC3EA8FD8E3D1BF /* String+Thin.swift in Sources */,
-				95468751CD236055DEE756C6001B6CEF /* TabBarAppearance.swift in Sources */,
-				68E9B838FE4ED88521405E8042C7F7CE /* Thin-dummy.m in Sources */,
-				CE518C53CA5423DD3DE181295AE8DB0D /* Thin.swift in Sources */,
-				81D1CE2DA41C72275045E00B739006C6 /* ThinConfig.swift in Sources */,
-				BA521328D75B11DCC2E2C647C9344EB4 /* ThinConfigProtocol.swift in Sources */,
-				DC6A78628D56A5CB37847D501F46A7F1 /* ThinNetwork.swift in Sources */,
-				EF6FF62F296F5BEE9ADD42BBDB17FDFC /* THReusableView.swift in Sources */,
-				13E241470FD6CB33C62B2064A8320D0F /* Timer+Thin.swift in Sources */,
-				DBF81F8DF7EF7534D4106CBE07F61F34 /* UIAlertController+Thin.swift in Sources */,
-				6A3F180A8C52B757480EF4994CD03E00 /* UIColor+Thin.swift in Sources */,
-				C0C9B8CB23BB402E00BB33E5 /* UIFont+Thin.swift in Sources */,
-				6F6389D82DDBA84145A9508F0FFAD00C /* UIDevice+Thin.swift in Sources */,
-				AE9460C8D15229C91B1F95DC01EF58C7 /* UITabBarController+Thin.swift in Sources */,
-				C0C9B8C923BAF8D800BB33E5 /* UIImage+Thin.swift in Sources */,
-				8A295827A568DDC04B58466662054D74 /* UIViewController+Thin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +516,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3C16606211FFF53E144080D84794F776 /* Release */ = {
+		161F9BAADBA6E7B1D7756E3E3E79D82F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81C30118027725C3B99489267ACFA126 /* Thin.xcconfig */;
+			baseConfigurationReference = 49A9AA7D44A674913CF1ADF932FAA3E4 /* Thin.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -542,11 +542,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		70058770E879FC52CAEEB87AE67908E3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -582,9 +581,9 @@
 			};
 			name = Release;
 		};
-		82628940C5F714771EFB30D52200D5B9 /* Debug */ = {
+		7D41E722F5139FBBE8ADDA3EA2900C37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81C30118027725C3B99489267ACFA126 /* Thin.xcconfig */;
+			baseConfigurationReference = 49A9AA7D44A674913CF1ADF932FAA3E4 /* Thin.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -608,10 +607,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		960B6F86F321D8A5998EC7219CA88397 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -839,11 +839,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		233EAAFBD5841E87D169C6AF9539F8FD /* Build configuration list for PBXNativeTarget "Thin" */ = {
+		0C069D661426307C59C9F5F9529ED2A8 /* Build configuration list for PBXNativeTarget "Thin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82628940C5F714771EFB30D52200D5B9 /* Debug */,
-				3C16606211FFF53E144080D84794F776 /* Release */,
+				161F9BAADBA6E7B1D7756E3E3E79D82F /* Debug */,
+				7D41E722F5139FBBE8ADDA3EA2900C37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -17,7 +17,7 @@ public enum THHTTPMethod: String {
 }
 
 /// Tiny Network API Request
-public class THNetwork {
+public class ThinNetwork {
     public static var showRequestLog: Bool      = false
     public static var timeoutInterval: Double   = 10
     //{status:0,data:{},msg:"success"}

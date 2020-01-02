@@ -28,16 +28,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navBuilder.titleFont = UIFont(name: "Copperplate", size: 18)!
         navBuilder.isTranslucent = false
         navBuilder.showSeparator = false
-//        NavBarAppearance.active(navBuilder)
+        NavBarAppearance.active(navBuilder)
         
         var tabBuilder = TabBarBuilder.default
-//        tabBuilder.backgroundColor = UIColor.th.rgb(39, 40, 34)
+        tabBuilder.backgroundColor = UIColor.th.rgb(39, 40, 34)
         tabBuilder.selectedColor = UIColor.th.rgb(230, 220, 109)
         tabBuilder.normalColor = .cyan
         tabBuilder.font = UIFont(name: "Bradley Hand", size: 12)
-        tabBuilder.isTranslucent = true
+        tabBuilder.isTranslucent = false
         tabBuilder.showSeparator = false
-//        TabBarAppearance.active(tabBuilder)
+        TabBarAppearance.active(tabBuilder)
+        
         return true
     }
 
