@@ -294,11 +294,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Thin_Example/Pods-Thin_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Thin/Thin.framework",
+				"${BUILT_PRODUCTS_DIR}/ThinX/ThinX.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Thin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ThinX.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

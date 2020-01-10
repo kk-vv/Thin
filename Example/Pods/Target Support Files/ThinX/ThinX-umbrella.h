@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ThinVersionNumber;
-FOUNDATION_EXPORT const unsigned char ThinVersionString[];
+FOUNDATION_EXPORT double ThinXVersionNumber;
+FOUNDATION_EXPORT const unsigned char ThinXVersionString[];
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Thin
+import ThinX
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate{
     
@@ -59,7 +59,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         //tblList.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.th.reuseIdentifier)
         tblList.delegate = self
         tblList.dataSource = self
-        
+                        
+//        let thinB = [[1,2,3],[4,5],[nil]]
+//
+//        print("🐌 \(thinB.map{ $0.map{ ($0 ?? 0) + 2 }})")
+//        print("🐌 \(thinB.flatMap{ $0.map{($0 ?? 0) + 2 }})")
+//                        
     }
     
     override func rightBarButtonAction(index: Int) {

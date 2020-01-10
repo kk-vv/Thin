@@ -1,16 +1,16 @@
 PODS:
-  - Thin (0.1.0)
+  - ThinX (1.0.0)
 
 DEPENDENCIES:
-  - Thin (from `../`)
+  - ThinX (from `../`)
 
 EXTERNAL SOURCES:
-  Thin:
+  ThinX:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Thin: 34fb45671fe461234011c2235eb190d2df5a4846
+  ThinX: 700362ee33080847d921a888645e33d11fdf9dac
 
-PODFILE CHECKSUM: acb73addcd7c4b17fd9a54b764c4f66214c33fec
+PODFILE CHECKSUM: 0cf233cf234fad21de8be9551ea6b74e72ed6041
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0.beta.2

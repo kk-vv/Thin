@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Thin
+## ThinX
 
 Copyright (c) 2019 iFallen <hulj1204@yahoo.com>
 

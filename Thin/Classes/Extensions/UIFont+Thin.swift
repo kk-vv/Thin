@@ -48,3 +48,25 @@ extension Thin where Base: UIFont {
         return UIFont.systemFont(ofSize: size + fix)
     }
 }
+
+
+public enum PFFontWeight: String {
+    case thin       =   "PingFangSC-Thin"
+    case light      =   "PingFangSC-Light"
+    case ultralight =   "PingFangSC-Ultralight"
+    case regular    =   "PingFangSC-Regular"
+    case medium     =   "PingFangSC-Medium"
+    case semibold   =   "PingFangSC-Semibold"
+}
+
+extension Thin where Base: UIFont {
+    public static func pfFont(_ weight: PFFontWeight, size: CGFloat) -> UIFont {
+        guard let font = UIFont(name: weight.rawValue, size: size) else {
+            if weight == .medium || weight == .semibold {
+                return UIFont.boldSystemFont(ofSize: size)
+            }
+            return UIFont.systemFont(ofSize: size)
+        }
+        return font
+    }
+}

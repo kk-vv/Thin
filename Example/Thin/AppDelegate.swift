@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Thin
+import ThinX
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -1,5 +1,5 @@
 import XCTest
-import Thin
+import ThinX
 
 class Tests: XCTestCase {
     

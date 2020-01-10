@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'Thin_Example' do
-  pod 'Thin', :path => '../'
+  pod 'ThinX', :path => '../'
 
   target 'Thin_Tests' do
     inherit! :search_paths

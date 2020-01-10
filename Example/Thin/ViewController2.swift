@@ -7,25 +7,50 @@
 //
 
 import UIKit
-import Thin
+import ThinX
 
 class ViewController2: UIViewController {
 
+    private let cView = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         th.addNavBarButton(texts: ["Logout"], at: .left, font: UIFont(name: "Bradley Hand", size: 16)!, color: .purple)
-        th.addNavBarButton(texts: ["REQUEST", "2", "3"], at: .right, fixSpace: 20)
+        th.addNavBarButton(texts: ["REQUEST", "HideMask", "Alert"], at: .right, fixSpace: 20)
         
         let s = Date.th.Current.millisecond()
         print("🐌 \(s)")
         print("🐌 \(Date.th.Millisecond.intToTime(312, component: "~"))")
         print("🐌 \(Date.th.Millisecond.date(from: s))")
+        
+        cView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        cView.backgroundColor = UIColor.th.subTint
+        cView.center = view.center
+        view.addSubview(cView)
+        cView.th.corners(UIRectCorner.th.forwardSlash, radii: 20, bounds: nil)
+        
+        let label = UILabel()
+        label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        label.text = "TEXT"
+        label.textColor = UIColor.th.tint
+        label.font = UIFont.th.pfFont(.semibold, size: 30)
+        cView.addSubview(label)
+        
+        let label1 = UILabel()
+        label1.frame = CGRect(x: 0, y: 50, width: 100, height: 50)
+        label1.text = "TEXT"
+        label1.textColor = UIColor.th.tint
+        label1.font = UIFont.boldSystemFont(ofSize: 30)
+        cView.addSubview(label1)
+        
+        //cView.th.showMask()
+        cView.th.showMask(color: UIColor.red.withAlphaComponent(0.65))
     }
     
     
     override func leftBarButtonAction(index: Int) {
+        
         UIAlertController.th.showActionSheet(withTitle: "Title",
                                              message: "Message",
                                              buttonTexts: ["OK"],
@@ -46,7 +71,11 @@ class ViewController2: UIViewController {
                 print("🐌 \(msg)")
             }
         } else {
-            UIAlertController.th.showAlert(withTitle: "Index", message: "\(index)")
+            if index == 1 {
+                cView.th.showMask(color: nil)
+            } else {
+                UIAlertController.th.showAlert(withTitle: "Index", message: "\(index)")
+            }
         }
         
     }

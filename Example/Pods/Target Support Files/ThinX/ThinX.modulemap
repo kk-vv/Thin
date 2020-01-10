@@ -1,0 +1,6 @@
+framework module ThinX {
+  umbrella header "ThinX-umbrella.h"
+
+  export *
+  module * { export * }
+}

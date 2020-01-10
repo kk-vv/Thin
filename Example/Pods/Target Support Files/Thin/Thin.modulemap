@@ -1,6 +1,0 @@
-framework module Thin {
-  umbrella header "Thin-umbrella.h"
-
-  export *
-  module * { export * }
-}
