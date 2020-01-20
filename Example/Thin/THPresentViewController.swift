@@ -33,7 +33,7 @@ extension THPresentViewController {
         return svc
     }
     
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {               
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let svc = SlideInAnimationController()
         svc.from = .top
         return svc
