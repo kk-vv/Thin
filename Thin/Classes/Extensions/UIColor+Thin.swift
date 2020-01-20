@@ -68,7 +68,7 @@ extension Thin where Base: UIColor {
 
 extension Thin where Base: UIColor {
     
-    /// 主色调-1
+    ///主色调-1 - 详细配置见Config.plist
     public static var tint: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.init { (trait) -> UIColor in
@@ -100,7 +100,7 @@ extension Thin where Base: UIColor {
     
     
     /// 背景颜色
-    public static var bg: UIColor {
+    public static var background: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.init { (trait) -> UIColor in
                 if trait.userInterfaceStyle == .dark {
@@ -115,7 +115,7 @@ extension Thin where Base: UIColor {
     }
     
     /// 子视图背景颜色
-    public static var subBg: UIColor {
+    public static var subBackground: UIColor {
         if #available(iOS 13.0, *) {
             return UIColor.init { (trait) -> UIColor in
                 if trait.userInterfaceStyle == .dark {

@@ -16,8 +16,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
     let list1 = [("Title", UIFont.th.title(), UIColor.th.title, "UIFont.th.title()"),
     ("Tint", UIFont.th.title(), UIColor.th.tint, "UIFont.th.title()"),
     ("SubTint", UIFont.th.title(), UIColor.th.subTint, "UIFont.th.title()"),
-    ("Background fix -1", UIFont.th.body(fix: -1), UIColor.th.bg, "UIFont.th.body(fix: -1)"),
-    ("SubBackground fix -2", UIFont.th.body(fix: -2), UIColor.th.subBg, "UIFont.th.body(fix: -2)")]
+    ("Background fix -1", UIFont.th.body(fix: -1), UIColor.th.background, "UIFont.th.body(fix: -1)"),
+    ("SubBackground fix -2", UIFont.th.body(fix: -2), UIColor.th.subBackground, "UIFont.th.body(fix: -2)")]
     
     let list2 = [("Separator", UIFont.th.body(), UIColor.th.separator, "UIFont.th.body()"),
                  ("Border", UIFont.th.body(), UIColor.th.border, "UIFont.th.body()"),
@@ -69,7 +69,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
     
     override func rightBarButtonAction(index: Int) {
         let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.th.bg
+        vc.view.backgroundColor = UIColor.th.background
         navigationController?.pushViewController(vc, animated: true)
     }
     

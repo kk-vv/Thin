@@ -1,9 +1,9 @@
 # ThinX
 
-[![CI Status](https://img.shields.io/travis/iFallen/Thin.svg?style=flat)](https://travis-ci.org/iFallen/Thin)
-[![Version](https://img.shields.io/cocoapods/v/Thin.svg?style=flat)](https://cocoapods.org/pods/Thin)
-[![License](https://img.shields.io/cocoapods/l/Thin.svg?style=flat)](https://cocoapods.org/pods/Thin)
-[![Platform](https://img.shields.io/cocoapods/p/Thin.svg?style=flat)](https://cocoapods.org/pods/Thin)
+[![CI Status](https://img.shields.io/travis/iFallen/Thin.svg?style=flat)](https://travis-ci.org/iFallen/ThinX)
+[![Version](https://img.shields.io/cocoapods/v/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
+[![License](https://img.shields.io/cocoapods/l/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
+[![Platform](https://img.shields.io/cocoapods/p/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
 
 ## Example
 

@@ -1,5 +1,5 @@
 PODS:
-  - ThinX (1.0.0)
+  - ThinX (1.0.1)
 
 DEPENDENCIES:
   - ThinX (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ThinX: 700362ee33080847d921a888645e33d11fdf9dac
+  ThinX: 1ae696e01cd2b8da007aff38ecf0e26df889ea5f
 
 PODFILE CHECKSUM: 0cf233cf234fad21de8be9551ea6b74e72ed6041
 

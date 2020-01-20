@@ -12,6 +12,7 @@ import ThinX
 class ViewController2: UIViewController {
 
     private let cView = UIView()
+    private let btnShow = UIButton(type: .custom)
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +46,18 @@ class ViewController2: UIViewController {
         cView.addSubview(label1)
         
         //cView.th.showMask()
-        cView.th.showMask(color: UIColor.red.withAlphaComponent(0.65))
+        cView.th.showMask(color: UIColor.purple.withAlphaComponent(0.35))
+        
+        btnShow.setTitle("show", for: .normal)
+        btnShow.setTitleColor(.blue, for: .normal)
+        btnShow.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+        btnShow.center = CGPoint(x: view.center.x, y: cView.frame.maxY + 50)
+        view.addSubview(btnShow)
+        btnShow.addTarget(self, action: #selector(showPresent), for: .touchUpInside)
+    }
+    
+    @objc func showPresent() {
+        present(THPresentViewController(), animated: true, completion: nil)
     }
     
     
