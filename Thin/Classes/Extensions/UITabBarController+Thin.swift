@@ -25,7 +25,7 @@ public class TabbarItemModel: NSObject {
     public var selectedImage:      String  = ""
     public var title:              String  = ""
     
-    override init() {
+    public override init() {
     }
     
     public init(_ dic: [String:Any]!) {
