@@ -12,6 +12,27 @@ public enum FontNameType {
 }
 
 extension Thin where Base: UIFont {
+    // MARK: - FontName
+    public static var titleFontName: String? {
+        return ThinConfig.titleFontName
+    }
+    
+    public static var bodyFontName: String? {
+        return ThinConfig.bodyFontName
+    }
+    ///Title Font Size
+    public static var titleFontSize: CGFloat {
+        return ThinConfig.titleFontSize
+    }
+    ///Body Font Size
+    public static var bodyFontSize: CGFloat {
+        return ThinConfig.bodyFontSize
+    }
+    ///mark Font Size
+    public static var markFontSize: CGFloat {
+        return ThinConfig.markFontSize
+    }
+
     
     public static func font(_ type: FontNameType,
                             size: CGFloat,
