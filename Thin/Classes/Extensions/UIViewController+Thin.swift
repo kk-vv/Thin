@@ -143,8 +143,9 @@ public enum NavBarButtonPosition {
 extension Thin where Base: UIViewController {  
     /// Clear backBarButtonItem Title
     ///
-    /// - Parameter replaceBackItem: default true , if false , set the leftBarButtonItem
-    public func clearNavBarBackButtonTitle(replaceBackItem: Bool = true) {
+    /// - Parameter replaceBackItem: if false , replace the leftBarButtonItem else replace backBarButtonItem
+    // if true , interactivePopGestureRecognizer will disable
+    public func clearNavBarBackButtonTitle(replaceBackItem: Bool = false) {
         if replaceBackItem {
             let backItem = UIBarButtonItem(title: " ", style: .done, target: base, action: #selector(base.navbackAction))
             base.navigationItem.backBarButtonItem = backItem
