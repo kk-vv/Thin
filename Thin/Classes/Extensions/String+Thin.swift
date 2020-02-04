@@ -28,6 +28,10 @@ extension String {//扩展ZeroXmas，得到的Base为NSString?!
         let endIndex    = index(at: r.upperBound)
         return String(self[startIndex..<endIndex])
     }
+    
+    public var noticeName: NSNotification.Name {
+        return NSNotification.Name.init(self)
+    }
 }
 
 
@@ -57,9 +61,9 @@ extension Thin where Base == String {
         return size
     }
     
-    public var noticeName: NSNotification.Name {
-        return NSNotification.Name.init(base)
-    }
+//    public var noticeName: NSNotification.Name {//扩展ZeroXmas，得到的Base为NSString?!
+//        return NSNotification.Name.init(base)
+//    }
     
     public var telSecury: String {
         let head = base.subs(with: 0..<3)
