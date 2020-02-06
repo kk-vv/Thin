@@ -62,6 +62,17 @@ extension Thin where Base: NSAttributedString {
         }
         return attrString
     }
+    
+    public static func string(_ string: String,
+                                font: UIFont,
+                                color: UIColor,
+                                at range: NSRange?) -> NSMutableAttributedString {
+        let range = range ?? NSRange(location: 0, length: string.count)
+        let attrString = NSMutableAttributedString(string: string)
+        attrString.th.setColor(color, at: range)
+        attrString.th.setFont(font, at: range)
+        return attrString
+    }
 }
 
 extension Thin where Base: NSMutableAttributedString {
