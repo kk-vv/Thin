@@ -64,13 +64,13 @@ extension Thin where Base: NSAttributedString {
     }
 }
 
-extension NSMutableAttributedString {
+extension Thin where Base: NSMutableAttributedString {
     
     public func setColor(_ color: UIColor, at range:NSRange) {
-        self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+        self.base.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
     }
     
     public func setFont(_ font: UIFont, at range: NSRange) {
-        self.addAttribute(NSAttributedString.Key.font, value: font, range: range)
+        self.base.addAttribute(NSAttributedString.Key.font, value: font, range: range)
     }
 }

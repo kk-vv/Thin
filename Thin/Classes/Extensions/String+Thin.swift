@@ -94,8 +94,8 @@ extension Thin where Base == String {
         }
         
         let formatPrice = NSAttributedString.th.colorText(price, color: color, at: aRange)
-        formatPrice.setFont(UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size), at: aRange)
-        formatPrice.setFont(UIFont(name: fontName, size: intSize) ?? UIFont.systemFont(ofSize: intSize), at: pRange)
+        formatPrice.th.setFont(UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size), at: aRange)
+        formatPrice.th.setFont(UIFont(name: fontName, size: intSize) ?? UIFont.systemFont(ofSize: intSize), at: pRange)
         return formatPrice
     }
     

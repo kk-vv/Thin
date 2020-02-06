@@ -9,21 +9,21 @@
 		<key>tint</key>
 		<dict>
 			<key>light</key>
-			<string>#1876FF</string>
+			<string>#020202</string>
 			<key>dark</key>
-			<string>#1880FF</string>
+			<string>#FFFFFF</string>
 		</dict>
 		<key>subTint</key>
 		<dict>
 			<key>light</key>
-			<string>#FECD00</string>
+			<string>#D2A837</string>
 			<key>dark</key>
-			<string>#FED700</string>
+			<string>#FBFBFB</string>
 		</dict>
 		<key>background</key>
 		<dict>
 			<key>light</key>
-			<string>#FDFDFD</string>
+			<string>#F9F9F9</string>
 			<key>dark</key>
 			<string>#000000</string>
 		</dict>
@@ -37,21 +37,21 @@
 		<key>separator</key>
 		<dict>
 			<key>light</key>
-			<string>#E5E5EA</string>
+			<string>#F9F9F9</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
 		<key>border</key>
 		<dict>
 			<key>light</key>
-			<string>#D1D1D6</string>
+			<string>#F9F9F9</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
 		<key>empty</key>
 		<dict>
 			<key>light</key>
-			<string>#E5E5EA</string>
+			<string>#F9F9F9</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
@@ -79,7 +79,7 @@
 		<key>mark1</key>
 		<dict>
 			<key>light</key>
-			<string>#8C8C91</string>
+			<string>#D2D2D2</string>
 			<key>dark</key>
 			<string>#747579</string>
 		</dict>
