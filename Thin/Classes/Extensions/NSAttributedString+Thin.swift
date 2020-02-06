@@ -20,7 +20,8 @@ extension Thin where Base: NSAttributedString {
     ///   - range: -
     public static func lineStyle(_ text: String,
                                  style: THAttributedLineType,
-                                 at range: NSRange) -> NSMutableAttributedString {
+                                 at range: NSRange? = nil) -> NSMutableAttributedString {
+        let range = range ?? NSRange(location: 0, length: text.count)
         let attrString = NSMutableAttributedString(string: text)
         switch style {
         case .deleteLine:
@@ -39,7 +40,8 @@ extension Thin where Base: NSAttributedString {
     ///   - range: -
     public static func colorText(_ text: String,
                                  color: UIColor,
-                                 at range: NSRange) -> NSMutableAttributedString {
+                                 at range: NSRange? = nil) -> NSMutableAttributedString {
+        let range = range ?? NSRange(location: 0, length: text.count)
         let attrString = NSMutableAttributedString(string: text)
         if range.length > 0 {
             attrString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
@@ -55,7 +57,8 @@ extension Thin where Base: NSAttributedString {
     ///   - range: -
     public static func fontText(_ text: String,
                                 font: UIFont,
-                                at range: NSRange) -> NSMutableAttributedString {
+                                at range: NSRange? = nil) -> NSMutableAttributedString {
+        let range = range ?? NSRange(location: 0, length: text.count)
         let attrString = NSMutableAttributedString(string: text)
         if range.length > 0 {
             attrString.addAttribute(NSAttributedString.Key.font, value: font, range: range)
@@ -66,7 +69,7 @@ extension Thin where Base: NSAttributedString {
     public static func string(_ string: String,
                                 font: UIFont,
                                 color: UIColor,
-                                at range: NSRange?) -> NSMutableAttributedString {
+                                at range: NSRange? = nil) -> NSMutableAttributedString {
         let range = range ?? NSRange(location: 0, length: string.count)
         let attrString = NSMutableAttributedString(string: string)
         attrString.th.setColor(color, at: range)
@@ -77,7 +80,7 @@ extension Thin where Base: NSAttributedString {
 
 extension Thin where Base: NSMutableAttributedString {
     
-    public func setColor(_ color: UIColor, at range:NSRange) {
+    public func setColor(_ color: UIColor, at range: NSRange) {
         self.base.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
     }
     
