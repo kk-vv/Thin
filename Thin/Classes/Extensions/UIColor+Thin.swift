@@ -36,18 +36,18 @@ extension Thin where Base: UIColor {
     public static func hexStr(_ str: String) -> UIColor {
         var cString: String = str.trimmingCharacters(in: .newlines).uppercased()
         if cString.hasPrefix("0x") || cString.hasPrefix("0X") {
-            cString = cString.subs(from: 2)
+            cString = cString.th.subs(from: 2)
         }
         if (cString.hasPrefix("#")) {
-            cString = cString.subs(from: 1)
+            cString = cString.th.subs(from: 1)
         }
 
         if (cString.count != 6) {
             return UIColor.clear
         }
-        let rString = cString.subs(to: 2)
-        let gString = cString.subs(with: 2..<4)
-        let bString = cString.subs(with: 4..<6)
+        let rString = cString.th.subs(to: 2)
+        let gString = cString.th.subs(with: 2..<4)
+        let bString = cString.th.subs(with: 4..<6)
 
         var r: UInt32 = 0, g: UInt32 = 0, b: UInt32 = 0;
         Scanner(string: rString).scanHexInt32(&r)

@@ -7,31 +7,30 @@
 
 import Foundation
 
-extension String {//扩展ZeroXmas，得到的Base为NSString?!
+extension String: ThinCompatible {}
+
+extension Thin where Base == String {
     
     public func index(at: Int) -> String.Index {
-        return self.index(self.startIndex, offsetBy: at)
+        return self.base.index(self.base.startIndex, offsetBy: at)
     }
     
     public func subs(from: Int) -> String {
         let fromIndex = index(at: from)
-        return String(self[fromIndex..<self.endIndex])
+        return String(self.base[fromIndex..<self.base.endIndex])
     }
     
     public func subs(to: Int) -> String {
         let toIndex = index(at: to)
-        return String(self[self.startIndex..<toIndex])
+        return String(self.base[self.base.startIndex..<toIndex])
     }
     
     public func subs(with r:Range<Int>) -> String {
         let startIndex  = index(at: r.lowerBound)
         let endIndex    = index(at: r.upperBound)
-        return String(self[startIndex..<endIndex])
+        return String(self.base[startIndex..<endIndex])
     }
-    
-    public var noticeName: NSNotification.Name {
-        return NSNotification.Name.init(self)
-    }
+
 }
 
 
@@ -60,18 +59,17 @@ extension Thin where Base == String {
                                                    context: nil).size
         return size
     }
-    
-//    public var noticeName: NSNotification.Name {//扩展ZeroXmas，得到的Base为NSString?!
-//        return NSNotification.Name.init(base)
-//    }
+        
+    public var noticeName: NSNotification.Name {
+        return NSNotification.Name.init(self.base)
+    }
     
     public var telSecury: String {
-        let head = base.subs(with: 0..<3)
-        let tail = base.subs(with: (base.count - 4)..<base.count)
+        let head = base.th.subs(with: 0..<3)
+        let tail = base.th.subs(with: (base.count - 4)..<base.count)
         return "\(head)****\(tail)"
     }
     
-
     /// Price format attributedString
     ///
     /// - Parameters:
@@ -131,7 +129,7 @@ extension Thin where Base == String {
             }
         } else {
             if price.hasPrefix(currency) {
-                return price.subs(from: 1)
+                return price.th.subs(from: 1)
             }
         }
         return price
@@ -147,7 +145,7 @@ extension Thin where Base == String {
 }
 
 extension Thin where Base: NSNumber {
-    public func zx_priceString(_ unit:Bool) -> String {
+    public func priceString(_ unit:Bool) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.minimumFractionDigits = 2
@@ -157,7 +155,7 @@ extension Thin where Base: NSNumber {
         if unit {
             return str
         } else {
-            return str.subs(from: 1)
+            return str.th.subs(from: 1)
         }
     }
 }

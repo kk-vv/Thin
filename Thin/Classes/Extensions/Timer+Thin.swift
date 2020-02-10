@@ -8,15 +8,20 @@
 import Foundation
 
 extension Thin where Base: Timer {
-    static func scheduledTimer(timeInterval: TimeInterval,
+    public static func scheduledTimer(timeInterval: TimeInterval,
                                repeats: Bool,
                                completion:@escaping ((_ timer:Timer)->())) -> Timer{
-        
-        return Timer.scheduledTimer(timeInterval: timeInterval,
-                                    target: Timer.self,
-                                    selector: #selector(Timer.completionLoop(timer:)),
-                                    userInfo: completion,
-                                    repeats: repeats)
+        if #available(iOS 10.0, *) {
+            return Timer.scheduledTimer(withTimeInterval: timeInterval,
+                                        repeats: repeats,
+                                        block: completion)
+        } else {
+            return Timer.scheduledTimer(timeInterval: timeInterval,
+                                        target: Timer.self,
+                                        selector: #selector(Timer.completionLoop(timer:)),
+                                        userInfo: completion,
+                                        repeats: repeats)
+        }
     }
 }
 

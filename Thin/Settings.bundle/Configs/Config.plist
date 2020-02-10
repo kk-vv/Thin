@@ -23,35 +23,35 @@
 		<key>background</key>
 		<dict>
 			<key>light</key>
-			<string>#F9F9F9</string>
+			<string>#F3F4F6</string>
 			<key>dark</key>
 			<string>#000000</string>
 		</dict>
 		<key>subBackground</key>
 		<dict>
 			<key>light</key>
-			<string>#FFFFFF</string>
+			<string>#F5F6F9</string>
 			<key>dark</key>
 			<string>#1C1C1E</string>
 		</dict>
 		<key>separator</key>
 		<dict>
 			<key>light</key>
-			<string>#F9F9F9</string>
+			<string>#F3F4F6</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
 		<key>border</key>
 		<dict>
 			<key>light</key>
-			<string>#F9F9F9</string>
+			<string>#EAEAEA</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
 		<key>empty</key>
 		<dict>
 			<key>light</key>
-			<string>#F9F9F9</string>
+			<string>#E6E6E6</string>
 			<key>dark</key>
 			<string>#2C2C2E</string>
 		</dict>
@@ -72,21 +72,21 @@
 		<key>subBody</key>
 		<dict>
 			<key>light</key>
-			<string>#232323</string>
+			<string>#3D3D3D</string>
 			<key>dark</key>
 			<string>#F8F8F8</string>
 		</dict>
 		<key>mark1</key>
 		<dict>
 			<key>light</key>
-			<string>#D2D2D2</string>
+			<string>#7F7F7F</string>
 			<key>dark</key>
 			<string>#747579</string>
 		</dict>
 		<key>mark2</key>
 		<dict>
 			<key>light</key>
-			<string>#F2F2F7</string>
+			<string>#B6B6B6</string>
 			<key>dark</key>
 			<string>#F2F2F7</string>
 		</dict>
@@ -131,7 +131,7 @@
 			<key>l</key>
 			<integer>12</integer>
 			<key>xl</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 	</dict>
 </dict>

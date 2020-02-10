@@ -54,6 +54,9 @@ class ViewController2: UIViewController {
         btnShow.center = CGPoint(x: view.center.x, y: cView.frame.maxY + 50)
         view.addSubview(btnShow)
         btnShow.addTarget(self, action: #selector(showPresent), for: .touchUpInside)
+        let sTel = "18081003733".th.telSecury
+        let name = "ReloadUI".th.noticeName
+        print("🐌 fdas")
     }
     
     @objc func showPresent() {
