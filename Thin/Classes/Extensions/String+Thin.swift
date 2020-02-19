@@ -52,10 +52,11 @@ extension Thin where Base == String {
     ///   - limiteSize: -
     /// - Returns: -
     public func rect(_ font:UIFont,
-                     limiteSize:CGSize) -> CGSize {
+                     limiteSize:CGSize,
+                     linespacing: CGFloat = 10) -> CGSize {
         let size = (base as NSString).boundingRect(with: limiteSize,
                                                    options: NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue|NSStringDrawingOptions.truncatesLastVisibleLine.rawValue),
-                                                   attributes: [NSAttributedString.Key.font: font],
+                                                   attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.paragraphStyle: NSAttributedString.th.lineSpacing(linespacing, font: font)],
                                                    context: nil).size
         return size
     }

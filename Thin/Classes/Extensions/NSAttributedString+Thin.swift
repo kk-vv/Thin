@@ -12,11 +12,11 @@ public enum THAttributedLineType {
 }
 
 extension Thin where Base: NSAttributedString {
-    public static func lineSpacing(_ spacing: CGFloat = 10, font: UIFont) -> [NSAttributedString.Key: Any] {
+    public static func lineSpacing(_ spacing: CGFloat = 10, font: UIFont) -> NSMutableParagraphStyle {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = spacing - (font.lineHeight - font.pointSize)
         paragraphStyle.lineBreakMode = .byWordWrapping
-        return [.paragraphStyle: paragraphStyle.copy()]
+        return paragraphStyle
     }
 }
 extension Thin where Base: NSAttributedString {
@@ -26,7 +26,7 @@ extension Thin where Base: NSAttributedString {
                               lineSpacing: CGFloat = 10,
                               range: NSRange? = nil) -> NSMutableAttributedString {
         let range = range ?? NSRange(location: 0, length: string.count)
-        let attrString = NSMutableAttributedString(string: string, attributes: NSAttributedString.th.lineSpacing(lineSpacing, font: font))
+        let attrString = NSMutableAttributedString(string: string, attributes: [NSAttributedString.Key.paragraphStyle: NSAttributedString.th.lineSpacing(lineSpacing, font: font)])
         attrString.th.setFont(font, at: range)
         if let color = color {
             attrString.th.setColor(color, at: range)
