@@ -90,8 +90,8 @@ extension Thin where Base == String {
         if  location.length > 0 {
             pRange = NSMakeRange(1, location.location)//整数部分
         }
-        
-        let formatPrice = NSAttributedString.th.colorText(price, color: color, at: aRange)
+        let formatPrice = NSMutableAttributedString.init(string: price)
+        formatPrice.th.setColor(color, at: aRange)
         formatPrice.th.setFont(UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size), at: aRange)
         formatPrice.th.setFont(UIFont(name: fontName, size: intSize) ?? UIFont.systemFont(ofSize: intSize), at: pRange)
         return formatPrice

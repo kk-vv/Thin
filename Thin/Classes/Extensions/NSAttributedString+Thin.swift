@@ -12,56 +12,43 @@ public enum THAttributedLineType {
 }
 
 extension Thin where Base: NSAttributedString {
-    
+    public static func lineSpacing(_ spacing: CGFloat = 10, font: UIFont) -> [NSAttributedString.Key: Any] {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = spacing - (font.lineHeight - font.pointSize)
+        paragraphStyle.lineBreakMode = .byWordWrapping
+        return [.paragraphStyle: paragraphStyle.copy()]
+    }
+}
+extension Thin where Base: NSAttributedString {
+    public static func string(string: String,
+                              font: UIFont,
+                              color: UIColor? = nil,
+                              lineSpacing: CGFloat = 10,
+                              range: NSRange? = nil) -> NSMutableAttributedString {
+        let range = range ?? NSRange(location: 0, length: string.count)
+        let attrString = NSMutableAttributedString(string: string, attributes: NSAttributedString.th.lineSpacing(lineSpacing, font: font))
+        attrString.th.setFont(font, at: range)
+        if let color = color {
+            attrString.th.setColor(color, at: range)
+        }
+        return attrString
+    }
     /// Build Line Style Text
     /// - Parameters:
     ///   - text: -
     ///   - style: -
     ///   - range: -
-    public static func lineStyle(_ text: String,
+    public static func lineStyle(string: String,
                                  style: THAttributedLineType,
+                                 font: UIFont,
                                  at range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: text.count)
-        let attrString = NSMutableAttributedString(string: text)
+        let range = range ?? NSRange(location: 0, length: string.count)
+        let attrString = self.string(string: string, font: font)
         switch style {
         case .deleteLine:
             attrString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: range)
         case .underLine:
             attrString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue , range: range)
-        }
-        return attrString
-    }
-    
-    
-    /// Build Color Text
-    /// - Parameters:
-    ///   - text: -
-    ///   - color: -
-    ///   - range: -
-    public static func colorText(_ text: String,
-                                 color: UIColor,
-                                 at range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: text.count)
-        let attrString = NSMutableAttributedString(string: text)
-        if range.length > 0 {
-            attrString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
-        }
-        return attrString
-    }
-    
-    
-    /// Build Font Text
-    /// - Parameters:
-    ///   - text: -
-    ///   - font: -
-    ///   - range: -
-    public static func fontText(_ text: String,
-                                font: UIFont,
-                                at range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: text.count)
-        let attrString = NSMutableAttributedString(string: text)
-        if range.length > 0 {
-            attrString.addAttribute(NSAttributedString.Key.font, value: font, range: range)
         }
         return attrString
     }
