@@ -71,21 +71,21 @@ extension Thin where Base == String {
         return "\(head)****\(tail)"
     }
     
-    /// Price format attributedString
+    /// Currency format attributedString
     ///
     /// - Parameters:
     ///   - size: text size
-    ///   - intSize: int size
+    ///   - intBodySize: int size
     ///   - color: color
     ///   - fontName: font name
     /// - Returns: NSMutableAttributedString
-    public func priceFormat(size:CGFloat,
-                            intSize: CGFloat,
-                            color: UIColor = .black,
-                            fontName: String = "Arial") -> NSMutableAttributedString {
-        let price = self.priceString()
+    public func attributedCurrencyStr(size:CGFloat,
+                                intBodySize: CGFloat,
+                                color: UIColor = .black,
+                                fontName: String = "Arial") -> NSMutableAttributedString {
+        let price = self.currencyString()
         let aRange = NSMakeRange(0, price.count)//¥ + 小数部分
-        var pRange = NSMakeRange(1, price.count)//整数部分
+        var pRange = NSMakeRange(1, price.count)//数值
         
         let location = (price as NSString).range(of: ".")
         if  location.length > 0 {
@@ -94,7 +94,7 @@ extension Thin where Base == String {
         let formatPrice = NSMutableAttributedString.init(string: price)
         formatPrice.th.setColor(color, at: aRange)
         formatPrice.th.setFont(UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size), at: aRange)
-        formatPrice.th.setFont(UIFont(name: fontName, size: intSize) ?? UIFont.systemFont(ofSize: intSize), at: pRange)
+        formatPrice.th.setFont(UIFont(name: fontName, size: intBodySize) ?? UIFont.systemFont(ofSize: intBodySize), at: pRange)
         return formatPrice
     }
     
@@ -102,8 +102,8 @@ extension Thin where Base == String {
     ///
     /// - Parameter color: text color
     /// - Returns: NSMutableAttributedString
-    public func priceFormat(color: UIColor?) -> NSMutableAttributedString {
-        return self.priceFormat(size: 12, intSize: 15, color: color ?? UIColor.black)
+    public func attributedCurrencyStr(color: UIColor?) -> NSMutableAttributedString {
+        return self.attributedCurrencyStr(size: 12, intBodySize: 15, color: color ?? UIColor.black)
     }
     
     /// Price format string
@@ -112,7 +112,7 @@ extension Thin where Base == String {
     ///   - unit: is show unit
     ///   - currency: default ¥
     /// - Returns: String
-    public func priceString(_ unit: Bool = true, currency:String = "¥") -> String {
+    public func currencyString(_ unit: Bool = true, currency: String = "¥") -> String {
         var price = base
         if price.count <= 0 {
             price = "0"
@@ -120,9 +120,19 @@ extension Thin where Base == String {
         let location = (price as NSString).range(of: ".")
         if  location.length <= 0 {
             price += ".00"
-        } else if (price.count - 1 - location.location) < 2 {
-            price += "0"
+        } else {
+            let tail = price.th.subs(from: location.location)
+            if tail.count < 2 {
+                price += "0"
+            } else {
+                price = price.th.subs(to: location.location) + tail.th.subs(to: 2)
+            }
         }
+        //if  location.length <= 0 {
+        //    price += ".00"
+        //} else if (price.count - 1 - location.location) < 2 {//浮点数 会出现小数点位数大于2
+        //    price += "0"
+        //}
         price = price.replacingOccurrences(of: "(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))", with: ",", options: .regularExpression, range: price.startIndex..<price.endIndex)
         if unit {
             if !price.hasPrefix(currency) {
