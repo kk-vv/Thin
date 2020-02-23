@@ -122,10 +122,10 @@ extension Thin where Base == String {
             price += ".00"
         } else {
             let tail = price.th.subs(from: location.location)
-            if tail.count < 2 {
+            if tail.count < 3 {//包含点
                 price += "0"
             } else {
-                price = price.th.subs(to: location.location) + tail.th.subs(to: 2)
+                price = price.th.subs(to: location.location) + tail.th.subs(to: 3)
             }
         }
         //if  location.length <= 0 {
@@ -156,7 +156,7 @@ extension Thin where Base == String {
 }
 
 extension Thin where Base: NSNumber {
-    public func priceString(_ unit:Bool) -> String {
+    public func currencyString(_ unit:Bool) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.minimumFractionDigits = 2
