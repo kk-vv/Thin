@@ -40,5 +40,5 @@ TODO: Thin contain common config, e.g. color font navBar tabBar.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.swift_version = '5.0'
+  s.swift_version = '5.2'
 end
