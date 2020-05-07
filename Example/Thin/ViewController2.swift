@@ -29,7 +29,7 @@ class ViewController2: UIViewController {
         cView.backgroundColor = UIColor.th.subTint
         cView.center = view.center
         view.addSubview(cView)
-        cView.th.corners(UIRectCorner.th.forwardSlash, radii: 20, bounds: nil)
+        cView.th.corners(.forwardSlash, radii: 20, bounds: nil)
         
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)

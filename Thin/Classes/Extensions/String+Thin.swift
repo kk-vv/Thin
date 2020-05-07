@@ -66,9 +66,12 @@ extension Thin where Base == String {
     }
     
     public var telSecury: String {
-        let head = base.th.subs(with: 0..<3)
-        let tail = base.th.subs(with: (base.count - 4)..<base.count)
-        return "\(head)****\(tail)"
+        if self.base.count > 4 {
+            let head = base.th.subs(with: 0..<3)
+            let tail = base.th.subs(with: (base.count - 4)..<base.count)
+            return "\(head)****\(tail)"
+        }
+        return self.base
     }
     
     /// Currency format attributedString
@@ -83,7 +86,7 @@ extension Thin where Base == String {
                                 intBodySize: CGFloat,
                                 color: UIColor = .black,
                                 fontName: String = "Arial") -> NSMutableAttributedString {
-        let price = self.currencyString()
+        let price = self.currencyString("¥", isGroup: true, noFractionifInt: false)
         let aRange = NSMakeRange(0, price.count)//¥ + 小数部分
         var pRange = NSMakeRange(1, price.count)//数值
         
@@ -107,12 +110,12 @@ extension Thin where Base == String {
     }
     
     /// Price format string
-    ///
     /// - Parameters:
-    ///   - unit: is show unit
-    ///   - currency: default ¥
+    ///   - unit: unit description
+    ///   - isGroup: , split
+    ///   - noFractionifInt: 整数是否保留小数点后面两个0
     /// - Returns: String
-    public func currencyString(_ unit: Bool = true, currency: String = "¥") -> String {
+    public func currencyString(_ unit: String?, isGroup: Bool, noFractionifInt: Bool) -> String {
         var price = base
         if price.count <= 0 {
             price = "0"
@@ -128,19 +131,22 @@ extension Thin where Base == String {
                 price = price.th.subs(to: location.location) + tail.th.subs(to: 3)
             }
         }
-        //if  location.length <= 0 {
-        //    price += ".00"
-        //} else if (price.count - 1 - location.location) < 2 {//浮点数 会出现小数点位数大于2
-        //    price += "0"
-        //}
-        price = price.replacingOccurrences(of: "(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))", with: ",", options: .regularExpression, range: price.startIndex..<price.endIndex)
-        if unit {
-            if !price.hasPrefix(currency) {
-                return "\(currency)\(price)"
+        if noFractionifInt {
+            let location = (price as NSString).range(of: ".")
+            if  location.length > 0 {
+                let tail = price.th.subs(from: location.location)
+                if tail == ".0" || tail == ".00" {
+                    price = price.th.subs(to: location.location)
+                }
             }
-        } else {
-            if price.hasPrefix(currency) {
-                return price.th.subs(from: 1)
+        }
+        
+        if isGroup {
+            price = price.replacingOccurrences(of: "(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))", with: ",", options: .regularExpression, range: price.startIndex..<price.endIndex)
+        }
+        if let unit = unit, !unit.isEmpty {
+            if !price.hasPrefix(unit) {
+                return "\(unit)\(price)"
             }
         }
         return price

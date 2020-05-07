@@ -20,7 +20,7 @@ class THPresentViewController: PresentBaseViewController {
         contentView.frame = CGRect(x: 0, y: 0, width: 200, height: 60)
         contentView.center = view.center
         contentView.backgroundColor = UIColor.th.tint
-        contentView.th.corners(UIRectCorner.th.forwardSlash)
+        contentView.th.corners(.forwardSlash)
         UIFont.th.titleFontSize
     }
 

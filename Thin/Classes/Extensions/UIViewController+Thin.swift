@@ -360,6 +360,35 @@ extension Thin where Base: UIViewController {
             base.tabBarController?.tabBar.isTranslucent = false
         }
     }
+    
+    /// setNavSubViewColor: title and button color
+    /// - Parameter color: color
+    public func setNavSubViewColor(color: UIColor) {
+        self.setNavTitleColor(color: color)
+        self.setNavButtonColor(color: color)
+    }
+    
+    /// reloadNavSubViewColor to default config [title and button color]
+    public func reloadNavSubViewColor() {
+        self.reloadNavTitleColor()
+        self.reloadNavButtonColor()
+    }
+    
+    private func setNavTitleColor(color: UIColor) {
+        self.base.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: color]
+    }
+    
+    private func reloadNavTitleColor() {
+        self.base.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: NavBarBuilder.default.titleColor]
+    }
+    
+    private func setNavButtonColor(color: UIColor) {
+        self.base.navigationController?.navigationBar.tintColor = color
+    }
+    
+    private func reloadNavButtonColor() {
+        self.base.navigationController?.navigationBar.tintColor = NavBarBuilder.default.buttonTextColor
+    }
 }
 
 extension UIViewController {
