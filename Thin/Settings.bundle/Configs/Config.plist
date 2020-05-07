@@ -9,21 +9,21 @@
 		<key>tint</key>
 		<dict>
 			<key>light</key>
-			<string>#020202</string>
+			<string>#313131</string>
 			<key>dark</key>
 			<string>#FFFFFF</string>
 		</dict>
 		<key>subTint</key>
 		<dict>
 			<key>light</key>
-			<string>#D2A837</string>
+			<string>#C9AF7E</string>
 			<key>dark</key>
 			<string>#FBFBFB</string>
 		</dict>
 		<key>background</key>
 		<dict>
 			<key>light</key>
-			<string>#F3F4F6</string>
+			<string>#F6F6F6</string>
 			<key>dark</key>
 			<string>#000000</string>
 		</dict>
@@ -65,28 +65,28 @@
 		<key>body</key>
 		<dict>
 			<key>light</key>
-			<string>#181818</string>
+			<string>#222222</string>
 			<key>dark</key>
 			<string>#FBFBFB</string>
 		</dict>
 		<key>subBody</key>
 		<dict>
 			<key>light</key>
-			<string>#3D3D3D</string>
+			<string>#666666</string>
 			<key>dark</key>
 			<string>#F8F8F8</string>
 		</dict>
 		<key>mark1</key>
 		<dict>
 			<key>light</key>
-			<string>#7F7F7F</string>
+			<string>#AAAAAA</string>
 			<key>dark</key>
 			<string>#747579</string>
 		</dict>
 		<key>mark2</key>
 		<dict>
 			<key>light</key>
-			<string>#B6B6B6</string>
+			<string>#D8D8D8</string>
 			<key>dark</key>
 			<string>#F2F2F7</string>
 		</dict>
@@ -94,9 +94,9 @@
 	<key>fontName</key>
 	<dict>
 		<key>title</key>
-		<string>PingFangSC-Regular</string>
+		<string>PingFangSC-Medium</string>
 		<key>body</key>
-		<string>PingFangSC-Light</string>
+		<string>PingFangSC-Regular</string>
 	</dict>
 	<key>fontSize</key>
 	<dict>

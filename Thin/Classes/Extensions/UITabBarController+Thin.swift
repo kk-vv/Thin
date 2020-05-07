@@ -7,13 +7,15 @@
 
 import Foundation
 
+class THViewController: UIViewController {
+    override var shouldAutorotate: Bool { return false }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return .portrait }
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation { return .portrait}
+}
+
 extension NSObject {
     public var th_className: String {
         return String(describing: type(of: self))
-    }
-    
-    public static var th_className: String{
-        return NSStringFromClass(type(of: self) as! AnyClass).components(separatedBy: ".").last!
     }
 }
 
@@ -82,7 +84,7 @@ extension Thin where Base: UITabBarController {
             mInfo.className =  controller.th_className
             mInfo.barItem = model
             THPresentVCInfo.thPresentVCsDic["\((base.viewControllers?.count)!)"] = mInfo
-            let emptyVC = UIViewController()
+            let emptyVC = THViewController()
             emptyVC.tabBarItem.image = normalImage
             emptyVC.tabBarItem.selectedImage = normalImage
             emptyVC.tabBarItem.title = model.title
