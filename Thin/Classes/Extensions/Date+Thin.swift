@@ -21,9 +21,9 @@ public enum THDateFormat {
         switch self {
         case .date:
             if isCHN {
-                return "YYYY年MM月dd日"
+                return "yyyy年MM月dd日"
             } else {
-                return "YYYY-MM-dd"
+                return "yyyy-MM-dd"
             }
         case .time:
             return "HH:mm"
@@ -32,15 +32,15 @@ public enum THDateFormat {
 
         case .dateTime:
             if isCHN {
-                return "YYYY年MM月dd日 HH:mm"
+                return "yyyy年MM月dd日 HH:mm"
             } else {
-                return "YYYY-MM-dd HH:mm"
+                return "yyyy-MM-dd HH:mm"
             }
         case .dateTimeWithSecond:
             if isCHN {
-                return "YYYY年MM月dd日 HH:mm:ss"
+                return "yyyy年MM月dd日 HH:mm:ss"
             } else {
-                return "YYYY-MM-dd HH:mm:ss"
+                return "yyyy-MM-dd HH:mm:ss"
             }
         case .custom(let format):
             return format
