@@ -49,9 +49,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         
         self.th.addNavBarButton(iconFontTexts: ["\u{e673}", "\u{e673}"], at: .left, iconFont: UIFont.init(name: "iconfont", size: 22)!, color: UIColor.cyan)
         self.th.addNavBarButton(texts: ["Next"], at: .right)
-        self.th.addNavBarButton(images: ["image1", "image2"], at: .right, useOriginalColor: false)
-        self.th.clearNavBarBackButtonTitle()
-        self.th.addNavBarButtonItems(customView: view, at: .left)
         
         list.append(contentsOf: list1)
         list.append(contentsOf: list2)
