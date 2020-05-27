@@ -47,7 +47,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         print("🐌 \(Bundle.th.version)")
         print("🐌 \(Bundle.th.build)")
         
-        th.addNavBarButton(texts: ["Next"], at: .right)
+        self.th.addNavBarButton(iconFontTexts: ["\u{e673}", "\u{e673}"], at: .left, iconFont: UIFont.init(name: "iconfont", size: 22)!, color: UIColor.cyan)
+        self.th.addNavBarButton(texts: ["Next"], at: .right)
+        self.th.addNavBarButton(images: ["image1", "image2"], at: .right, useOriginalColor: false)
+        self.th.clearNavBarBackButtonTitle()
+        self.th.addNavBarButtonItems(customView: view, at: .left)
         
         list.append(contentsOf: list1)
         list.append(contentsOf: list2)
@@ -55,22 +59,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         
         //TabBarAppearance.active(tabBar: (UIApplication.shared.keyWindow?.rootViewController as? UITabBarController)?.tabBar)
         view.backgroundColor = self.color
-        
         //tblList.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.th.reuseIdentifier)
         tblList.delegate = self
         tblList.dataSource = self
-                        
-//        let thinB = [[1,2,3],[4,5],[nil]]
-//
-//        print("🐌 \(thinB.map{ $0.map{ ($0 ?? 0) + 2 }})")
-//        print("🐌 \(thinB.flatMap{ $0.map{($0 ?? 0) + 2 }})")
-//                        
     }
     
     override func rightBarButtonAction(index: Int) {
         let vc = UIViewController()
         vc.view.backgroundColor = UIColor.th.background
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func leftBarButtonAction(index: Int) {
+        print("🐌 iconfont index: \(index)")
     }
     
     var color: UIColor {

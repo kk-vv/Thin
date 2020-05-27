@@ -21,7 +21,6 @@ class THPresentViewController: PresentBaseViewController {
         contentView.center = view.center
         contentView.backgroundColor = UIColor.th.tint
         contentView.th.corners(.forwardSlash)
-        UIFont.th.titleFontSize
     }
 
 }

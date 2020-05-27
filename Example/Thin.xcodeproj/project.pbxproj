@@ -18,6 +18,7 @@
 		C06B762223D55C5100A34D5D /* PresentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B762123D55C5100A34D5D /* PresentBaseViewController.swift */; };
 		C06B763423D579DA00A34D5D /* THPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B763323D579DA00A34D5D /* THPresentViewController.swift */; };
 		C0C9B8C723BAE9C600BB33E5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9B8C623BAE9C600BB33E5 /* ViewController2.swift */; };
+		C0F5968A247E2556005998B6 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0F59689247E2556005998B6 /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C06B762123D55C5100A34D5D /* PresentBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentBaseViewController.swift; sourceTree = "<group>"; };
 		C06B763323D579DA00A34D5D /* THPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THPresentViewController.swift; sourceTree = "<group>"; };
 		C0C9B8C623BAE9C600BB33E5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		C0F59689247E2556005998B6 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		E3EB707F091726FA787F1F9C /* Pods-Thin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thin_Example.release.xcconfig"; path = "Target Support Files/Pods-Thin_Example/Pods-Thin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB0C2E630D6C975345DD98B8 /* Thin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Thin.podspec; path = ../Thin.podspec; sourceTree = "<group>"; };
 		F0C53FE79C5CDF343EBAB328 /* Pods_Thin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 		607FACD21AFB9204008FA782 /* Example for Thin */ = {
 			isa = PBXGroup;
 			children = (
+				C0F59689247E2556005998B6 /* iconfont.ttf */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				C0C9B8C623BAE9C600BB33E5 /* ViewController2.swift */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F5968A247E2556005998B6 /* iconfont.ttf in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

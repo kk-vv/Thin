@@ -57,6 +57,8 @@ class ViewController2: UIViewController {
         let sTel = "18081003733".th.telSecury
         let name = "ReloadUI".th.noticeName
         print("🐌 fdas")
+        self.th.addKeyboardNotification()
+        self.th.removeKeyboardNotification()
     }
     
     @objc func showPresent() {
