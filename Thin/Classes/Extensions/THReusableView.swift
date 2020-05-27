@@ -23,5 +23,6 @@ extension Thin where Base: NibLoadableView {
 }
 
 extension UITableViewCell: ReusableView, NibLoadableView {}
-extension UICollectionViewCell: ReusableView, NibLoadableView {}
+//extension UICollectionViewCell: ReusableView, NibLoadableView {}
 extension UITableViewHeaderFooterView: ReusableView, NibLoadableView {}
+extension UICollectionReusableView: ReusableView, NibLoadableView {}

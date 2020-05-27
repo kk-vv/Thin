@@ -22,50 +22,33 @@ extension Thin where Base: NSAttributedString {
 extension Thin where Base: NSAttributedString {
     public static func string(string: String,
                               font: UIFont,
-                              color: UIColor? = nil,
-                              lineSpacing: CGFloat = 10,
+                              color: UIColor?,
+                              lineSpacing: CGFloat?,
                               range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: string.count)
-        let attrString = NSMutableAttributedString(string: string, attributes: [NSAttributedString.Key.paragraphStyle: NSAttributedString.th.lineSpacing(lineSpacing, font: font)])
+        //let range = range ?? NSRange(location: 0, length: string.count)//emoji 长度不对
+        let range = range ?? NSRange(location: 0, length: (string as NSString).length)
+        var attrString = NSMutableAttributedString(string: string)
+        if let lineSpacing = lineSpacing {
+            attrString = NSMutableAttributedString(string: string, attributes: [NSAttributedString.Key.paragraphStyle: NSAttributedString.th.lineSpacing(lineSpacing, font: font)])
+        }
         attrString.th.setFont(font, at: range)
         if let color = color {
             attrString.th.setColor(color, at: range)
-        }
-        return attrString
-    }
-    /// Build Line Style Text
-    /// - Parameters:
-    ///   - text: -
-    ///   - style: -
-    ///   - range: -
-    public static func lineStyle(string: String,
-                                 style: THAttributedLineType,
-                                 font: UIFont,
-                                 at range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: string.count)
-        let attrString = self.string(string: string, font: font)
-        switch style {
-        case .deleteLine:
-            attrString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: range)
-        case .underLine:
-            attrString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue , range: range)
-        }
-        return attrString
-    }
-    
-    public static func string(_ string: String,
-                                font: UIFont,
-                                color: UIColor,
-                                at range: NSRange? = nil) -> NSMutableAttributedString {
-        let range = range ?? NSRange(location: 0, length: string.count)
-        let attrString = NSMutableAttributedString(string: string)
-        attrString.th.setColor(color, at: range)
-        attrString.th.setFont(font, at: range)
+        }        
         return attrString
     }
 }
 
 extension Thin where Base: NSMutableAttributedString {
+    
+    public func setLineStyle(_ style: THAttributedLineType, at range: NSRange) {
+        switch style {
+        case .deleteLine:
+            self.base.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: range)
+        case .underLine:
+            self.base.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue , range: range)
+        }
+    }
     
     public func setColor(_ color: UIColor, at range: NSRange) {
         self.base.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)

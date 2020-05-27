@@ -85,14 +85,14 @@ extension UIViewController{
     /// - Parameters:
     ///   - dt: duration
     ///   - userInfo: userInfo description
-    @objc open func keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {}
+    @objc open func keyboardWillShow(duration dt: Double, userInfo:Dictionary<String,Any>) {}
     
     /// keyboardWillHide
     ///
     /// - Parameters:
     ///   - dt: duration
     ///   - userInfo: userInfo description
-    @objc open func keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {}
+    @objc open func keyboardWillHide(duration dt: Double, userInfo:Dictionary<String,Any>) {}
     
     /// keyboardWillChangeFrame
     ///
@@ -101,13 +101,13 @@ extension UIViewController{
     ///   - endRect: endRect
     ///   - dt: duration
     ///   - userInfo: userInfo description
-    @objc open func keyboardWillChangeFrame(beginRect:CGRect,
-                                               endRect: CGRect,
-                                               duration dt:Double,
-                                               userInfo:Dictionary<String,Any>) {}
+    @objc open func keyboardWillChangeFrame(beginRect: CGRect,
+                                            endRect: CGRect,
+                                            duration dt: Double,
+                                            userInfo: Dictionary<String,Any>) {}
     
     
-    @objc final func baseKeyboardWillShow(notice:Notification) {
+    @objc final func baseKeyboardWillShow(notice: Notification) {
         if let userInfo = notice.userInfo as? Dictionary<String, Any> {
             let dt = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
             keyboardWillShow(duration: dt, userInfo:userInfo )
@@ -205,7 +205,6 @@ extension Thin where Base: UIViewController {
             }
         }
     }
-    
     
     /// Add BarButton Item by texts
     public func addNavBarButton(texts names: Array<String>,
@@ -334,7 +333,6 @@ extension Thin where Base: UIViewController {
         }
     }
     
-    
     /// Change NavBar BackgroundColor
     ///
     /// - Parameter color: color
@@ -351,7 +349,7 @@ extension Thin where Base: UIViewController {
     /// Change TabBar BackgroundColor
     ///
     /// - Parameter color: color
-    public func setTabBarBackgroundColor(_ color:UIColor!) {
+    public func setTabBarBackgroundColor(_ color: UIColor!) {
         base.tabBarController?.tabBar.barTintColor = color
         if color == UIColor.clear {
             base.tabBarController?.tabBar.isTranslucent = true
@@ -359,6 +357,35 @@ extension Thin where Base: UIViewController {
         } else {
             base.tabBarController?.tabBar.isTranslucent = false
         }
+    }
+    
+    /// setNavSubViewColor: title and button color
+    /// - Parameter color: color
+    public func setNavSubViewColor(_ color: UIColor) {
+        self.setNavTitleColor(color)
+        self.setNavButtonColor(color)
+    }
+    
+    /// reloadNavSubViewColor to default config [title and button color]
+    public func reloadNavSubViewColor() {
+        self.reloadNavTitleColor()
+        self.reloadNavButtonColor()
+    }
+    
+    private func setNavTitleColor(_ color: UIColor) {
+        self.base.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: color]
+    }
+    
+    private func reloadNavTitleColor() {
+        self.base.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: NavBarBuilder.default.titleColor]
+    }
+    
+    private func setNavButtonColor(_ color: UIColor) {
+        self.base.navigationController?.navigationBar.tintColor = color
+    }
+    
+    private func reloadNavButtonColor() {
+        self.base.navigationController?.navigationBar.tintColor = NavBarBuilder.default.buttonTextColor
     }
 }
 
