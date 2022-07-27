@@ -257,7 +257,7 @@ pod 'ThinX'
 
 ## Author
 
-iFallen, hulj1204@yahoo.com
+Felix, hulj1204@yahoo.com
 
 ## License
 
