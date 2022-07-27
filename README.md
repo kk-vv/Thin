@@ -1,6 +1,6 @@
 # ThinX
 
-[![CI Status](https://img.shields.io/travis/iFallen/Thin.svg?style=flat)](https://travis-ci.org/iFallen/ThinX)
+[![CI Status](https://img.shields.io/travis/soulbind/Thin.svg?style=flat)](https://travis-ci.org/soulbind/ThinX)
 [![Version](https://img.shields.io/cocoapods/v/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
 [![License](https://img.shields.io/cocoapods/l/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
 [![Platform](https://img.shields.io/cocoapods/p/Thin.svg?style=flat)](https://cocoapods.org/pods/ThinX)
@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 |MAIN|
 |----|
-|![main](https://github.com/iFallen/Thin/raw/master/img/main.png)|
+|![main](https://github.com/soulbind/Thin/raw/master/img/main.png)|
 
 ## USAGE
 
@@ -20,7 +20,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 |CONFIG|
 |----|
-|![config](https://github.com/iFallen/Thin/raw/master/img/config.png)|
+|![config](https://github.com/soulbind/Thin/raw/master/img/config.png)|
 
 
 #### NavBarAppearance
